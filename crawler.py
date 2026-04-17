@@ -18,7 +18,7 @@ SOURCE_REPOS = [
     ("vodtv/api", "LunaTV-config.json"),
     ("kouzhaobo/TVyuan", "sources.json"),
     ("YYDS678/uzVideo", "video_sources_sese.json"),
-    ("dongyubin/IPTV", "sources.json"),
+    ("YYDS678/uzVideo", "video_sources_default.json"),
 ]
 
 
