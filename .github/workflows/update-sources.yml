@@ -1,85 +1,43 @@
-name: 更新视频源
+name: Update Sources
 
 on:
   schedule:
-    # 每周一凌晨 2 点执行 (UTC 时间，北京时间 10 点)
     - cron: '0 2 * * 1'
-  workflow_dispatch:  # 手动触发
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: 检出仓库
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
-      - name: 设置 Python
+        
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: 安装依赖
+          
+      - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install requests aiohttp
-
-      - name: 运行爬虫
+          pip install requests
+          
+      - name: Run crawler
         run: python crawler.py
-
-      - name: 检查结果
-        id: check
+        
+      - name: Get stats
+        id: stats
         run: |
-          # 读取统计
-          TOTAL=$(python -c "import json; d=json.load(open('sources.json')); print(d.get('total_sources', 0))")
-          AVAILABLE=$(python -c "import json; d=json.load(open('sources.json')); print(d.get('total_available', 0))")
-
-          echo "total_sources=$TOTAL" >> $GITHUB_OUTPUT
-          echo "available_sources=$AVAILABLE" >> $GITHUB_OUTPUT
-
-          echo "📊 统计结果:"
-          echo "- 总源数: $TOTAL"
-          echo "- 可用源数: $AVAILABLE"
-
-          # 检查是否满足要求
-          if [ "$TOTAL" -lt 110 ]; then
-            echo "⚠️ 警告: 总源数 $TOTAL 低于 110"
-          fi
-          if [ "$AVAILABLE" -lt 90 ]; then
-            echo "⚠️ 警告: 可用源数 $AVAILABLE 低于 90"
-          fi
-
-      - name: 提交更新
+          TOTAL=$(python3 -c "import json; d=json.load(open('sources.json')); print(d.get('total_sources', 0))")
+          AVAILABLE=$(python3 -c "import json; d=json.load(open('sources.json')); print(d.get('total_available', 0))")
+          echo "total=$TOTAL" >> $GITHUB_OUTPUT
+          echo "available=$AVAILABLE" >> $GITHUB_OUTPUT
+          echo "Total: $TOTAL, Available: $AVAILABLE"
+          
+      - name: Commit changes
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-
           git add -A
-          git diff --quiet && git diff --staged --quiet || git commit -m "🔄 自动更新视频源 - $(date '+%Y-%m-%d %H:%M')
-
-总源数: ${{ steps.check.outputs.total_sources }}
-可用源数: ${{ steps.check.outputs.available_sources }}"
-
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update sources - $(date '+%Y-%m-%d')"
           git push
-
-      - name: 创建状态徽章
-        run: |
-          TOTAL=${{ steps.check.outputs.total_sources }}
-          AVAILABLE=${{ steps.check.outputs.available_sources }}
-          RATE=$((AVAILABLE * 100 / TOTAL))
-
-          # 创建徽章 SVG
-          cat > badge.svg << EOF
-          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="20">
-            <rect width="80" height="20" fill="#555"/>
-            <rect x="80" width="120" height="20" fill="${RATE}>80?#4c1:#dfb317"/>
-            <text x="40" y="14" fill="#fff" text-anchor="middle" font-size="11">可用源</text>
-            <text x="140" y="14" fill="#fff" text-anchor="middle" font-size="11">${AVAILABLE}/${TOTAL}</text>
-          </svg>
-          EOF
-
-          git add badge.svg
-          git commit -m "📊 更新状态徽章" || true
-          git push || true
