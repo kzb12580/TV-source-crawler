@@ -17,12 +17,8 @@ TEST_KEYWORD = "热门"
 SOURCE_REPOS = [
     ("vodtv/api", "LunaTV-config.json"),
     ("kouzhaobo/TVyuan", "sources.json"),
-    ("dongyubin/IPTV", "sources.json"),
-    ("morpheus0mp/chjhy", "api.json"),
     ("YYDS678/uzVideo", "video_sources_sese.json"),
-    ("liu673cn/bug", "vod/xpg.json"),
-    ("kimcrowing/IPTV", "CCTV/zh.json"),
-    ("heroaku/TVboxo", "9m.json"),
+    ("dongyubin/IPTV", "sources.json"),
 ]
 
 
