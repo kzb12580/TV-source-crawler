@@ -37,6 +37,8 @@ def fetch_from_repos():
             if r.status_code == 200:
                 data = r.json()
                 count = 0
+                
+                # 处理字典格式 (api_site, sites, sources)
                 for key in ['api_site', 'sites', 'sources']:
                     items = data.get(key, {})
                     if isinstance(items, dict):
@@ -52,6 +54,22 @@ def fetch_from_repos():
                                             'detail': v.get('detail', '')
                                         }
                                         count += 1
+                
+                # 处理列表格式
+                if isinstance(data, list):
+                    for item in data:
+                        if isinstance(item, dict):
+                            api = item.get('api', item.get('url', ''))
+                            name = item.get('name', 'Unknown')
+                            if api and api.startswith('http'):
+                                if api not in all_apis:
+                                    all_apis[api] = {
+                                        'name': name,
+                                        'api': api,
+                                        'detail': ''
+                                    }
+                                    count += 1
+                
                 print(f"   ✅ {repo}: +{count} 个新源")
         except Exception as e:
             print(f"   ❌ {repo}: {e}")
