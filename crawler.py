@@ -19,6 +19,10 @@ SOURCE_REPOS = [
     ("kouzhaobo/TVyuan", "sources.json"),
     ("dongyubin/IPTV", "sources.json"),
     ("morpheus0mp/chjhy", "api.json"),
+    ("YYDS678/uzVideo", "video_sources_sese.json"),
+    ("xlc520/MaoTV", "mao/220410.json"),
+    ("heroaku/TVboxo", "9m.json"),
+    ("xiongjian83/TvBox", "ZY.json"),
 ]
 
 
