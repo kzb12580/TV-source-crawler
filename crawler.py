@@ -12,8 +12,6 @@ import json
 import requests
 import time
 import re
-import asyncio
-import aiohttp
 from datetime import datetime
 from typing import Dict, Any, List, Tuple
 from concurrent.futures import ThreadPoolExecutor, as_completed
