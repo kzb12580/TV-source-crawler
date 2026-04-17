@@ -38,24 +38,7 @@ def fetch_from_repos():
                 data = r.json()
                 count = 0
                 
-                # 处理字典格式 (api_site, sites, sources)
-                for key in ['api_site', 'sites', 'sources']:
-                    items = data.get(key, {})
-                    if isinstance(items, dict):
-                        for k, v in items.items():
-                            if isinstance(v, dict):
-                                api = v.get('api', '')
-                                name = v.get('name', k)
-                                if api and api.startswith('http'):
-                                    if api not in all_apis:
-                                        all_apis[api] = {
-                                            'name': name,
-                                            'api': api,
-                                            'detail': v.get('detail', '')
-                                        }
-                                        count += 1
-                
-                # 处理列表格式
+                # 处理列表格式 (优先)
                 if isinstance(data, list):
                     for item in data:
                         if isinstance(item, dict):
@@ -69,6 +52,23 @@ def fetch_from_repos():
                                         'detail': ''
                                     }
                                     count += 1
+                else:
+                    # 处理字典格式 (api_site, sites, sources)
+                    for key in ['api_site', 'sites', 'sources']:
+                        items = data.get(key, {})
+                        if isinstance(items, dict):
+                            for k, v in items.items():
+                                if isinstance(v, dict):
+                                    api = v.get('api', '')
+                                    name = v.get('name', k)
+                                    if api and api.startswith('http'):
+                                        if api not in all_apis:
+                                            all_apis[api] = {
+                                                'name': name,
+                                                'api': api,
+                                                'detail': v.get('detail', '')
+                                            }
+                                            count += 1
                 
                 print(f"   ✅ {repo}: +{count} 个新源")
         except Exception as e:
