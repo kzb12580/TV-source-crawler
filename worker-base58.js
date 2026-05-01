@@ -6,12 +6,18 @@
 // This Worker only fetches and caches that text, so it is fast and stable.
 //
 // Usage for app subscription:
-//   https://your-worker.example.com/
+//   https://your-worker.example.com/?url=https://raw.githubusercontent.com/kzb12580/TV-source-crawler/refs/heads/main/sources.json
+//   https://your-worker.example.com/?url=https://raw.githubusercontent.com/kzb12580/TV-source-crawler/main/sources.json
+//
+// The url=... form is kept for compatibility with apps that require a JSON config
+// subscription address and expect this Worker to return Base58 encoded text.
+// For the known TV-source-crawler JSON, the Worker maps sources.json ->
+// pre-generated sources.base58.txt to avoid Cloudflare Error 1102.
 //
 // Debug / raw files:
-//   /?raw=1      -> sources.compact.json
-//   /?file=json  -> sources.json
-//   /?file=base58 -> sources.base58.txt
+//   /?url=...&raw=1 -> sources.compact.json
+//   /?file=json     -> sources.json
+//   /?file=base58   -> sources.base58.txt
 //
 // Optional env vars:
 //   BASE58_URL    default: https://raw.githubusercontent.com/kzb12580/TV-source-crawler/main/sources.base58.txt
@@ -20,9 +26,11 @@
 //   ACCESS_TOKEN  optional token protection
 //   CACHE_TTL     optional seconds, default 3600
 
-const DEFAULT_BASE58_URL = 'https://raw.githubusercontent.com/kzb12580/TV-source-crawler/main/sources.base58.txt'
-const DEFAULT_COMPACT_URL = 'https://raw.githubusercontent.com/kzb12580/TV-source-crawler/main/sources.compact.json'
-const DEFAULT_JSON_URL = 'https://raw.githubusercontent.com/kzb12580/TV-source-crawler/main/sources.json'
+const RAW_BASE = 'https://raw.githubusercontent.com/kzb12580/TV-source-crawler/main'
+const CDN_BASE = 'https://cdn.jsdelivr.net/gh/kzb12580/TV-source-crawler@main'
+const DEFAULT_BASE58_URL = `${RAW_BASE}/sources.base58.txt`
+const DEFAULT_COMPACT_URL = `${RAW_BASE}/sources.compact.json`
+const DEFAULT_JSON_URL = `${RAW_BASE}/sources.json`
 const DEFAULT_CACHE_TTL = 3600
 
 export default {
@@ -52,43 +60,27 @@ async function handleRequest(request, env = {}, ctx = {}) {
 
     const file = (url.searchParams.get('file') || '').toLowerCase()
     const raw = ['1', 'true', 'yes'].includes((url.searchParams.get('raw') || '').toLowerCase())
+    const sourceParam = url.searchParams.get('url') || ''
     const cacheTtl = Number(env.CACHE_TTL || DEFAULT_CACHE_TTL)
 
-    let upstreamUrl = env.BASE58_URL || DEFAULT_BASE58_URL
-    let contentType = 'text/plain; charset=utf-8'
-    let encoded = 'base58'
+    const resolved = resolveUpstream({ file, raw, sourceParam, env })
+    if (!resolved.ok) return corsResponse(resolved.message, resolved.status)
 
-    if (raw || file === 'compact') {
-      upstreamUrl = env.COMPACT_URL || DEFAULT_COMPACT_URL
-      contentType = 'application/json; charset=utf-8'
-      encoded = 'none'
-    } else if (file === 'json') {
-      upstreamUrl = env.JSON_URL || DEFAULT_JSON_URL
-      contentType = 'application/json; charset=utf-8'
-      encoded = 'none'
-    } else if (file === 'base58' || !file) {
-      upstreamUrl = env.BASE58_URL || DEFAULT_BASE58_URL
-    } else {
-      return corsResponse('Invalid file parameter. Use base58, compact, json, or raw=1.', 400)
-    }
+    let { upstreamUrl, fallbackUrl, contentType, encoded, mode } = resolved
 
-    const valid = validateRawGithubUrl(upstreamUrl)
-    if (!valid.ok) return corsResponse(valid.message, valid.status)
-
-    const cacheKey = new Request(`${url.origin}${url.pathname}?file=${file || (raw ? 'compact' : 'base58')}&raw=${raw ? '1' : '0'}`)
+    const cacheKey = new Request(`${url.origin}${url.pathname}?mode=${mode}&src=${encodeURIComponent(sourceParam || file || (raw ? 'raw' : 'default'))}`)
     const cached = await caches.default.match(cacheKey)
     if (cached) return withCors(cached)
 
-    const upstream = await fetch(upstreamUrl, {
-      headers: {
-        'Accept': contentType,
-        'User-Agent': 'TV-source-crawler-worker/2.0',
-      },
-      cf: { cacheTtl, cacheEverything: true },
-    })
+    let upstream = await fetchSource(upstreamUrl, contentType, cacheTtl)
+    if (!upstream.ok && fallbackUrl) {
+      upstream = await fetchSource(fallbackUrl, contentType, cacheTtl)
+      if (upstream.ok) upstreamUrl = fallbackUrl
+    }
 
     if (!upstream.ok) {
-      return corsResponse(`Failed to fetch source file: HTTP ${upstream.status}`, upstream.status)
+      // 部分播放器把非 200 直接显示“拉取失败: 503”。这里返回 502 更明确。
+      return corsResponse(`Failed to fetch source file: HTTP ${upstream.status}`, 502)
     }
 
     const body = await upstream.text()
@@ -109,27 +101,107 @@ async function handleRequest(request, env = {}, ctx = {}) {
   }
 }
 
-function validateRawGithubUrl(input) {
+function resolveUpstream({ file, raw, sourceParam, env }) {
+  let upstreamUrl = env.BASE58_URL || DEFAULT_BASE58_URL
+  let fallbackUrl = `${CDN_BASE}/sources.base58.txt`
+  let contentType = 'text/plain; charset=utf-8'
+  let encoded = 'base58'
+  let mode = 'base58'
+
+  if (sourceParam) {
+    const source = validateSourceParam(sourceParam)
+    if (!source.ok) return source
+
+    // 关键兼容：软件仍然传 ?url=...sources.json，Worker 返回对应的 Base58。
+    // 不在 Worker 内实时编码，避免 1102。
+    if (source.kind === 'sources-json') {
+      if (raw) {
+        upstreamUrl = env.COMPACT_URL || DEFAULT_COMPACT_URL
+        fallbackUrl = `${CDN_BASE}/sources.compact.json`
+        contentType = 'application/json; charset=utf-8'
+        encoded = 'none'
+        mode = 'compact-from-url'
+      } else {
+        upstreamUrl = env.BASE58_URL || DEFAULT_BASE58_URL
+        fallbackUrl = `${CDN_BASE}/sources.base58.txt`
+        mode = 'base58-from-url'
+      }
+      return { ok: true, upstreamUrl, fallbackUrl, contentType, encoded, mode }
+    }
+
+    if (source.kind === 'base58') {
+      upstreamUrl = source.url
+      fallbackUrl = source.url.replace('https://raw.githubusercontent.com/kzb12580/TV-source-crawler/main', CDN_BASE)
+      return { ok: true, upstreamUrl, fallbackUrl, contentType, encoded, mode: 'base58-url' }
+    }
+
+    return { ok: false, status: 400, message: 'Only TV-source-crawler sources.json/base58 URLs are supported' }
+  }
+
+  if (raw || file === 'compact') {
+    upstreamUrl = env.COMPACT_URL || DEFAULT_COMPACT_URL
+    fallbackUrl = `${CDN_BASE}/sources.compact.json`
+    contentType = 'application/json; charset=utf-8'
+    encoded = 'none'
+    mode = 'compact'
+  } else if (file === 'json') {
+    upstreamUrl = env.JSON_URL || DEFAULT_JSON_URL
+    fallbackUrl = `${CDN_BASE}/sources.json`
+    contentType = 'application/json; charset=utf-8'
+    encoded = 'none'
+    mode = 'json'
+  } else if (file === 'base58' || !file) {
+    upstreamUrl = env.BASE58_URL || DEFAULT_BASE58_URL
+    fallbackUrl = `${CDN_BASE}/sources.base58.txt`
+    mode = 'base58'
+  } else {
+    return { ok: false, status: 400, message: 'Invalid file parameter. Use base58, compact, json, or raw=1.' }
+  }
+
+  return { ok: true, upstreamUrl, fallbackUrl, contentType, encoded, mode }
+}
+
+function validateSourceParam(input) {
   let url
   try {
     url = new URL(input)
   } catch {
-    return { ok: false, status: 400, message: 'Invalid upstream URL' }
+    return { ok: false, status: 400, message: 'Invalid url parameter' }
   }
 
   if (url.protocol !== 'https:') {
-    return { ok: false, status: 400, message: 'Only https upstream URLs are allowed' }
+    return { ok: false, status: 400, message: 'Only https source URLs are allowed' }
   }
 
-  if (url.hostname !== 'raw.githubusercontent.com') {
-    return { ok: false, status: 403, message: `Upstream host not allowed: ${url.hostname}` }
+  const isRaw = url.hostname === 'raw.githubusercontent.com'
+  const isJsDelivr = url.hostname === 'cdn.jsdelivr.net'
+  if (!isRaw && !isJsDelivr) {
+    return { ok: false, status: 403, message: `Source host not allowed: ${url.hostname}` }
   }
 
-  if (!url.pathname.includes('/kzb12580/TV-source-crawler/')) {
-    return { ok: false, status: 403, message: 'Only kzb12580/TV-source-crawler raw files are allowed' }
+  const normalizedPath = url.pathname.replace('/refs/heads/main/', '/main/')
+  const isRepo = normalizedPath.includes('/kzb12580/TV-source-crawler/')
+  if (!isRepo) {
+    return { ok: false, status: 403, message: 'Only kzb12580/TV-source-crawler source URLs are allowed' }
   }
 
-  return { ok: true }
+  if (normalizedPath.endsWith('/sources.json')) {
+    return { ok: true, kind: 'sources-json', url: url.toString() }
+  }
+  if (normalizedPath.endsWith('/sources.base58.txt')) {
+    return { ok: true, kind: 'base58', url: url.toString().replace('/refs/heads/main/', '/main/') }
+  }
+  return { ok: true, kind: 'other', url: url.toString() }
+}
+
+function fetchSource(upstreamUrl, contentType, cacheTtl) {
+  return fetch(upstreamUrl, {
+    headers: {
+      'Accept': contentType,
+      'User-Agent': 'TV-source-crawler-worker/2.1',
+    },
+    cf: { cacheTtl, cacheEverything: true },
+  })
 }
 
 function corsResponse(body, status = 200, headers = {}) {
