@@ -156,16 +156,16 @@
       "is_adult": false,
       "status": "available"
     },
-    "api_wujinapi_me": {
+    "api_wujinapi_com": {
       "name": "TV-无尽资源",
-      "api": "https://api.wujinapi.me/api.php/provide/vod",
+      "api": "https://api.wujinapi.com/api.php/provide/vod",
       "detail": "https://wujinzy.com",
       "is_adult": false,
       "status": "available"
     },
-    "api_wujinapi_com": {
+    "api_wujinapi_me": {
       "name": "TV-无尽资源",
-      "api": "https://api.wujinapi.com/api.php/provide/vod",
+      "api": "https://api.wujinapi.me/api.php/provide/vod",
       "detail": "https://wujinzy.com",
       "is_adult": false,
       "status": "available"
@@ -1136,7 +1136,7 @@
       "detail": "https://www.6uzy.cc",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/500;HTTP 200/527;HTTP 200/524"
+      "reason": "ConnectTimeout;HTTP 429/17;HTTP 429/17"
     },
     "s_77hanju_com": {
       "name": "77韩剧(切)",
@@ -1176,7 +1176,7 @@
       "detail": "https://www.mbomovie.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/10925;api-text;api-text"
+      "reason": "ConnectTimeout;ConnectTimeout;HTTP 429/17"
     },
     "rctv_top": {
       "name": "MX影院(聚)",
@@ -1216,7 +1216,7 @@
       "detail": "https://omofun.tv",
       "is_adult": false,
       "status": "maybe",
-      "reason": "api-text;HTTP 200/10848;ConnectTimeout"
+      "reason": "HTTP 429/17;HTTP 429/17;ConnectTimeout"
     },
     "s_120_53_102_254": {
       "name": "T4公共",
@@ -1272,7 +1272,7 @@
       "detail": "http://haiwaikan.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/4215;HTTP 200/4195;HTTP 200/4240"
+      "reason": "HTTP 200/4240;HTTP 200/4210;HTTP 200/4220"
     },
     "caihy_zone_id": {
       "name": "TV-茶杯狐",
@@ -1288,7 +1288,7 @@
       "detail": "https://api.jmzy.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "ReadTimeout;ReadTimeout;ReadTimeout"
+      "reason": "HTTP 502/155;ReadTimeout;ReadTimeout"
     },
     "jyzyapi_com_4": {
       "name": "TV-金鹰资源",
@@ -1328,7 +1328,7 @@
       "detail": "https://api.foxzyapi.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 429/17;ConnectTimeout;HTTP 429/17"
+      "reason": "HTTP 429/17;ConnectTimeout;ConnectTimeout"
     },
     "haowywz_com": {
       "name": "☁┃小小┃云播",
@@ -1336,7 +1336,7 @@
       "detail": "https://haowywz.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/2583;HTTP 200/2672;HTTP 200/2663"
+      "reason": "HTTP 200/2589;HTTP 200/2676;HTTP 200/2665"
     },
     "s_7_qqqtv_top": {
       "name": "♨️飞翼┃4k",
@@ -1448,7 +1448,7 @@
       "detail": "https://api.000zy.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "api-text;api-text;api-text"
+      "reason": "api-text;api-text;HTTP 429/17"
     },
     "api_niuma_xyz": {
       "name": "发现源-api.niuma.xyz",
@@ -1488,7 +1488,7 @@
       "detail": "https://www.dianyingn.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 429/17;ConnectTimeout;ConnectTimeout"
+      "reason": "api-text;api-text;api-text"
     },
     "fantuan_wkfile_com": {
       "name": "发现源-fantuan.wkfile.com",
@@ -1584,7 +1584,7 @@
       "detail": "https://xn--128-zm3fr26s.xyz",
       "is_adult": false,
       "status": "maybe",
-      "reason": "api-text;api-text;ConnectTimeout"
+      "reason": "HTTP 429/17;HTTP 429/17;HTTP 429/17"
     },
     "xxx_com": {
       "name": "发现源-xxx.com",
@@ -1600,7 +1600,7 @@
       "detail": "https://zjmiao.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "api-text;api-text;api-text"
+      "reason": "HTTP 429/17;HTTP 429/17;HTTP 429/17"
     },
     "zzdj_cc": {
       "name": "发现源-zzdj.cc",
@@ -1616,7 +1616,7 @@
       "detail": "https://www.dmdm2020.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 429/17;HTTP 429/17;ConnectTimeout"
+      "reason": "ConnectTimeout;ConnectTimeout;ConnectTimeout"
     },
     "zwcoco_com": {
       "name": "哇可可影视(聚)",
@@ -1768,7 +1768,7 @@
       "detail": "https://www.vp1127.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 429/17;HTTP 429/17;HTTP 429/17"
+      "reason": "ConnectTimeout;ConnectTimeout;HTTP 429/17"
     },
     "siguyy_com": {
       "name": "思古影院(优)",
@@ -2040,7 +2040,7 @@
       "detail": "https://www.pangmaotv.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/4346;HTTP 200/4346;HTTP 200/4346"
+      "reason": "HTTP 200/4326;HTTP 200/4326;HTTP 200/4326"
     },
     "saobi2_com": {
       "name": "草P",
@@ -2080,7 +2080,7 @@
       "detail": "https://速影128.xyz",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/505;HTTP 200/532;ConnectTimeout"
+      "reason": "ConnectTimeout;HTTP 429/17;ConnectTimeout"
     },
     "kudianzy_com": {
       "name": "酷点资源(切)",
@@ -2136,7 +2136,7 @@
       "detail": "https://zy.ishoutu.com",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/10882;api-text;api-text"
+      "reason": "api-text;api-text;api-text"
     },
     "shayuzy5_com": {
       "name": "鲨鱼资源（备用）",
@@ -2184,7 +2184,7 @@
       "detail": "https://51kanju.cn",
       "is_adult": false,
       "status": "maybe",
-      "reason": "SSLError;SSLError;SSLError"
+      "reason": "ReadTimeout;ReadTimeout;ReadTimeout"
     },
     "s_360_tgzy_cc": {
       "name": "🐝土狗360",
@@ -2552,7 +2552,7 @@
       "detail": "https://lsys.dsmynas.com:3000",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/6;HTTP 502/11939;HTTP 200/6"
+      "reason": "HTTP 502/11939;HTTP 200/6;HTTP 200/6"
     },
     "tvbox_catvod_com_2": {
       "name": "🦚采集┃之王",
@@ -2560,7 +2560,7 @@
       "detail": "",
       "is_adult": false,
       "status": "maybe",
-      "reason": "HTTP 200/3758;HTTP 200/3758;HTTP 200/3758"
+      "reason": "HTTP 200/3758;HTTP 200/3756;HTTP 200/3758"
     },
     "madouse_la": {
       "name": "*麻豆视频2",
@@ -3108,7 +3108,7 @@
       "detail": "https://caiji.523zyw.com",
       "is_adult": true,
       "status": "maybe",
-      "reason": "ConnectionError;ConnectionError;HTTP 200/10745"
+      "reason": "HTTP 200/505;HTTP 200/532;HTTP 200/529"
     },
     "m_7777688_com": {
       "name": "*AVZY6888资源",
@@ -3260,7 +3260,7 @@
       "detail": "https://avtop10.com",
       "is_adult": true,
       "status": "maybe",
-      "reason": "HTTP 200/301123;HTTP 200/301123;HTTP 200/301123"
+      "reason": "HTTP 200/297955;HTTP 200/297955;HTTP 200/297955"
     },
     "xingba222_com_2": {
       "name": "杏吧资源",
@@ -3388,7 +3388,7 @@
       "detail": "",
       "is_adult": true,
       "status": "maybe",
-      "reason": "HTTP 200/10799;HTTP 200/510;HTTP 200/507"
+      "reason": "HTTP 429/17;HTTP 429/17;HTTP 429/17"
     },
     "jcspcj8_com": {
       "name": "🔞熊猫资源",
@@ -3396,20 +3396,20 @@
       "detail": "",
       "is_adult": true,
       "status": "maybe",
-      "reason": "HTTP 200/484;HTTP 200/511;HTTP 200/508"
-    },
-    "fhapiby_com": {
-      "name": "🔞番号资源",
-      "api": "https://fhapiby.com/api.php/provide/vod",
-      "detail": "http://fhzy10.com/",
-      "is_adult": true,
-      "status": "maybe",
-      "reason": "SSLError;SSLError;SSLError"
+      "reason": "HTTP 429/17;HTTP 429/17;HTTP 429/17"
     },
     "fhapi9_com_3": {
       "name": "🔞番号资源",
       "api": "https://fhapi9.com/api.php/provide/vod/at/xml",
       "detail": "",
+      "is_adult": true,
+      "status": "maybe",
+      "reason": "SSLError;SSLError;SSLError"
+    },
+    "fhapiby_com": {
+      "name": "🔞番号资源",
+      "api": "https://fhapiby.com/api.php/provide/vod",
+      "detail": "http://fhzy10.com/",
       "is_adult": true,
       "status": "maybe",
       "reason": "SSLError;SSLError;SSLError"
@@ -3455,7 +3455,7 @@
       "reason": "SSLError;SSLError;SSLError"
     }
   },
-  "update_date": "2026-05-02T05:22:28.790683",
+  "update_date": "2026-05-02T05:58:16.309517",
   "total_sources": 459,
   "total_available": 220,
   "total_maybe": 239,

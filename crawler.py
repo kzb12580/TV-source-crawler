@@ -413,6 +413,30 @@ def test_api(item: dict[str, Any]) -> tuple[dict[str, Any], str, str]:
     return item, "failed", joined
 
 
+def base58_encode_utf8(text: str) -> str:
+    alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
+    data = text.encode("utf-8")
+    if not data:
+        return ""
+
+    zeroes = 0
+    while zeroes < len(data) and data[zeroes] == 0:
+        zeroes += 1
+
+    digits = [0]
+    for byte in data[zeroes:]:
+        carry = byte
+        for i in range(len(digits)):
+            carry += digits[i] << 8
+            digits[i] = carry % 58
+            carry //= 58
+        while carry:
+            digits.append(carry % 58)
+            carry //= 58
+
+    return alphabet[0] * zeroes + "".join(alphabet[d] for d in reversed(digits))
+
+
 def main() -> None:
     print("=" * 50)
     print(f"🎬 视频源爬虫 - {datetime.now().isoformat()}")
@@ -477,7 +501,27 @@ def main() -> None:
         ("total_normal", sum(1 for s in included if not s.get("is_adult"))),
     ])
 
-    (ROOT / "sources.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    compact_api_site = OrderedDict()
+    for key, item in api_site.items():
+        compact_api_site[key] = {
+            "name": item["name"],
+            "api": item["api"],
+            "detail": item.get("detail", ""),
+        }
+        if item.get("is_adult") is True:
+            compact_api_site[key]["is_adult"] = True
+    compact_result = OrderedDict([
+        ("cache_time", CACHE_TIME),
+        ("api_site", compact_api_site),
+        ("update_date", now),
+        ("total_sources", len(compact_api_site)),
+    ])
+
+    sources_text = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
+    compact_text = json.dumps(compact_result, ensure_ascii=False, separators=(",", ":"))
+    (ROOT / "sources.json").write_text(sources_text, encoding="utf-8")
+    (ROOT / "sources.compact.json").write_text(compact_text + "\n", encoding="utf-8")
+    (ROOT / "sources.base58.txt").write_text(base58_encode_utf8(compact_text) + "\n", encoding="utf-8")
     (ROOT / "maybe_sources.json").write_text(json.dumps(maybe, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (ROOT / "failed_sources.json").write_text(json.dumps(failed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
