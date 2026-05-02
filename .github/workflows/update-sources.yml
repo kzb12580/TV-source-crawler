@@ -31,6 +31,7 @@ jobs:
       - name: Run crawler
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STRICTNESS: conservative
         run: python crawler.py
         
       - name: Get stats
