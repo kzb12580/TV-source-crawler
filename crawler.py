@@ -25,8 +25,8 @@ from urllib.parse import urlparse
 
 import requests
 
-REQUEST_TIMEOUT = 15
-MAX_WORKERS = 10
+REQUEST_TIMEOUT = 8
+MAX_WORKERS = 30
 CACHE_TIME = 9200
 GITHUB_SEARCH_PER_PAGE = 30
 GITHUB_SEARCH_MAX_ITEMS = 180
@@ -378,11 +378,15 @@ def test_api(item: dict[str, Any]) -> tuple[dict[str, Any], str, str]:
         return item, "failed", "obvious-junk"
 
     api = item["api"]
-    attempts = [
-        {"ac": "list"},
-        {"ac": "videolist", "wd": TEST_KEYWORDS[0]},
-        {"ac": "detail", "wd": TEST_KEYWORDS[1]},
-    ]
+    # conservative: 只测1次，失败即扔；balanced/loose: 3次全面探测
+    if STRICTNESS == "conservative":
+        attempts = [{"ac": "list"}]
+    else:
+        attempts = [
+            {"ac": "list"},
+            {"ac": "videolist", "wd": TEST_KEYWORDS[0]},
+            {"ac": "detail", "wd": TEST_KEYWORDS[1]},
+        ]
     errors = []
     saw_http_200 = False
     saw_cloudflare = False
