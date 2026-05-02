@@ -114,17 +114,17 @@
       "is_adult": false,
       "status": "available"
     },
-    "wolongzyw_com": {
-      "name": "TV-卧龙资源",
-      "api": "https://wolongzyw.com/api.php/provide/vod",
-      "detail": "https://wolongzyw.com",
-      "is_adult": false,
-      "status": "available"
-    },
     "collect_wolongzy_cc": {
       "name": "TV-卧龙资源",
       "api": "https://collect.wolongzy.cc/api.php/provide/vod",
       "detail": "https://collect.wolongzy.cc",
+      "is_adult": false,
+      "status": "available"
+    },
+    "wolongzyw_com": {
+      "name": "TV-卧龙资源",
+      "api": "https://wolongzyw.com/api.php/provide/vod",
+      "detail": "https://wolongzyw.com",
       "is_adult": false,
       "status": "available"
     },
@@ -156,9 +156,9 @@
       "is_adult": false,
       "status": "available"
     },
-    "api_wujinapi_com": {
+    "api_wujinapi_me": {
       "name": "TV-无尽资源",
-      "api": "https://api.wujinapi.com/api.php/provide/vod",
+      "api": "https://api.wujinapi.me/api.php/provide/vod",
       "detail": "https://wujinzy.com",
       "is_adult": false,
       "status": "available"
@@ -170,9 +170,9 @@
       "is_adult": false,
       "status": "available"
     },
-    "api_wujinapi_me": {
+    "api_wujinapi_com": {
       "name": "TV-无尽资源",
-      "api": "https://api.wujinapi.me/api.php/provide/vod",
+      "api": "https://api.wujinapi.com/api.php/provide/vod",
       "detail": "https://wujinzy.com",
       "is_adult": false,
       "status": "available"
@@ -1213,6 +1213,13 @@
       "is_adult": true,
       "status": "available"
     },
+    "hsckzy_xyz": {
+      "name": "AV-黄色仓库",
+      "api": "https://hsckzy.xyz/api.php/provide/vod",
+      "detail": "https://hsckzy.xyz",
+      "is_adult": true,
+      "status": "available"
+    },
     "hsckzy888_com_2": {
       "name": "AV-黄色资源",
       "api": "https://hsckzy888.com/api.php/provide/vod",
@@ -1494,11 +1501,11 @@
       "status": "available"
     }
   },
-  "update_date": "2026-05-02T00:32:44.267861",
-  "total_sources": 213,
-  "total_available": 213,
+  "update_date": "2026-05-02T00:43:20.009518",
+  "total_sources": 214,
+  "total_available": 214,
   "total_maybe": 0,
-  "total_included": 213,
-  "total_adult": 73,
+  "total_included": 214,
+  "total_adult": 74,
   "total_normal": 140
 }
