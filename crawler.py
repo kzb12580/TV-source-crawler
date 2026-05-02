@@ -492,40 +492,65 @@ def main() -> None:
             api_site[key]["reason"] = item.get("reason", "maybe")
 
     now = datetime.now().isoformat()
-    result = OrderedDict([
-        ("cache_time", CACHE_TIME),
-        ("strictness", STRICTNESS),
-        ("api_site", api_site),
-        ("update_date", now),
-        ("total_sources", len(api_site)),
-        ("total_available", len(available)),
-        ("total_maybe", len(maybe)),
-        ("total_included", len(included)),
-        ("total_adult", sum(1 for s in included if s.get("is_adult"))),
-        ("total_normal", sum(1 for s in included if not s.get("is_adult"))),
-    ])
 
-    compact_api_site = OrderedDict()
+    # 拆分普通源和成人源
+    normal_api_site = OrderedDict()
+    adult_api_site = OrderedDict()
     for key, item in api_site.items():
-        compact_api_site[key] = {
-            "name": item["name"],
-            "api": item["api"],
-            "detail": item.get("detail", ""),
-        }
-        if item.get("is_adult") is True:
-            compact_api_site[key]["is_adult"] = True
-    compact_result = OrderedDict([
-        ("cache_time", CACHE_TIME),
-        ("api_site", compact_api_site),
-        ("update_date", now),
-        ("total_sources", len(compact_api_site)),
-    ])
+        if item.get("is_adult"):
+            adult_api_site[key] = item
+        else:
+            normal_api_site[key] = item
 
-    sources_text = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
-    compact_text = json.dumps(compact_result, ensure_ascii=False, separators=(",", ":"))
-    (ROOT / "sources.json").write_text(sources_text, encoding="utf-8")
-    (ROOT / "sources.compact.json").write_text(compact_text + "\n", encoding="utf-8")
-    (ROOT / "sources.base58.txt").write_text(base58_encode_utf8(compact_text) + "\n", encoding="utf-8")
+    def build_result(api_site_dict, total_adult, total_normal):
+        return OrderedDict([
+            ("cache_time", CACHE_TIME),
+            ("strictness", STRICTNESS),
+            ("api_site", api_site_dict),
+            ("update_date", now),
+            ("total_sources", len(api_site_dict)),
+            ("total_available", len(available)),
+            ("total_maybe", len(maybe)),
+            ("total_included", len(api_site_dict)),
+            ("total_adult", total_adult),
+            ("total_normal", total_normal),
+        ])
+
+    def build_compact(api_site_dict):
+        compact = OrderedDict()
+        for key, item in api_site_dict.items():
+            compact[key] = {"name": item["name"], "api": item["api"], "detail": item.get("detail", "")}
+            if item.get("is_adult") is True:
+                compact[key]["is_adult"] = True
+        return compact
+
+    def write_json(path, data):
+        (ROOT / path).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    def write_compact(path, compact_dict):
+        text = json.dumps(OrderedDict([
+            ("cache_time", CACHE_TIME),
+            ("api_site", compact_dict),
+            ("update_date", now),
+            ("total_sources", len(compact_dict)),
+        ]), ensure_ascii=False, separators=(",", ":"))
+        (ROOT / path).write_text(text + "\n", encoding="utf-8")
+
+    def write_base58(path, compact_dict):
+        text = json.dumps(compact_dict, ensure_ascii=False, separators=(",", ":"))
+        (ROOT / path).write_text(base58_encode_utf8(text) + "\n", encoding="utf-8")
+
+    # 普通源（主文件）
+    normal_compact = build_compact(normal_api_site)
+    write_json("sources.json", build_result(normal_api_site, 0, len(normal_api_site)))
+    write_compact("sources.compact.json", normal_compact)
+    write_base58("sources.base58.txt", normal_compact)
+
+    # 成人源（独立文件）
+    adult_compact = build_compact(adult_api_site)
+    write_json("sources.adult.json", build_result(adult_api_site, len(adult_api_site), 0))
+    write_compact("sources.adult.compact.json", adult_compact)
+    write_base58("sources.adult.base58.txt", adult_compact)
     (ROOT / "maybe_sources.json").write_text(json.dumps(maybe, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (ROOT / "failed_sources.json").write_text(json.dumps(failed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
