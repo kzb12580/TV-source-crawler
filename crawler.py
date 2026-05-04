@@ -555,8 +555,8 @@ def main() -> None:
     (ROOT / "failed_sources.json").write_text(json.dumps(failed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     rate = len(included) / max(len(all_sources), 1) * 100
-    adult_available = result["total_adult"]
-    normal_available = result["total_normal"]
+    adult_available = len(adult_api_site)
+    normal_available = len(normal_api_site)
     stats = (
         "# 视频源统计\n\n"
         f"- 更新时间: {now}\n"
