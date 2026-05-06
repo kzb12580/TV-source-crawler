@@ -28,6 +28,13 @@ import requests
 REQUEST_TIMEOUT = 8
 MAX_WORKERS = 30
 CACHE_TIME = 9200
+M3U8_TIMEOUT = 12
+# m3u8 测试关键词：普通源用当下热门电视剧/电影/综艺
+M3U8_NORMAL_KEYWORDS = [
+    "狂飙", "流浪地球", "奔跑吧", "三体", "人世间", "苍兰诀", "孤注一掷", "漫长的季节",
+]
+# m3u8 测试关键词：成人源用常见成人内容名
+M3U8_ADULT_KEYWORDS = ["麻豆", "娜娜", "蜜桃"]
 GITHUB_SEARCH_PER_PAGE = 30
 GITHUB_SEARCH_MAX_ITEMS = 180
 # conservative: 只输出实测可用；balanced: 输出可用+疑似可用；loose: 只剔除明显垃圾/示例源
@@ -417,6 +424,34 @@ def test_api(item: dict[str, Any]) -> tuple[dict[str, Any], str, str]:
     return item, "failed", joined
 
 
+def test_m3u8(item: dict[str, Any], keywords: list[str]) -> bool:
+    """测试源是否有 m3u8 集数。任一关键词命中即返回 True。"""
+    api = item.get("api", "")
+    for kw in keywords:
+        try:
+            from urllib.parse import quote
+            resp = requests.get(
+                f"{api}?ac=videolist&wd={quote(kw)}",
+                timeout=M3U8_TIMEOUT,
+                headers={"User-Agent": USER_AGENT},
+            )
+            if resp.status_code != 200:
+                continue
+            data = resp.json()
+            for vod in (data.get("list") or [])[:3]:
+                play_url = vod.get("vod_play_url") or ""
+                if not play_url:
+                    continue
+                for source_part in play_url.split("$$$")[:1]:
+                    for ep in source_part.split("#")[:10]:
+                        parts = ep.split("$")
+                        if len(parts) == 2 and ".m3u8" in parts[1]:
+                            return True
+        except Exception:
+            continue
+    return False
+
+
 def base58_encode_utf8(text: str) -> str:
     alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
     data = text.encode("utf-8")
@@ -540,23 +575,75 @@ def main() -> None:
         text = json.dumps(compact_dict, ensure_ascii=False, separators=(",", ":"))
         (ROOT / path).write_text(base58_encode_utf8(text) + "\n", encoding="utf-8")
 
-    # 普通源（主文件）
+    # 普通源（主文件）——不测m3u8
     normal_compact = build_compact(normal_api_site)
     write_json("sources.json", build_result(normal_api_site, 0, len(normal_api_site)))
     write_compact("sources.compact.json", normal_compact)
     write_base58("sources.base58.txt", normal_compact)
 
-    # 成人源（独立文件）
+    # 成人源（独立文件）——不测m3u8
     adult_compact = build_compact(adult_api_site)
     write_json("sources.adult.json", build_result(adult_api_site, len(adult_api_site), 0))
     write_compact("sources.adult.compact.json", adult_compact)
     write_base58("sources.adult.base58.txt", adult_compact)
+
+    # ========== 步骤5: m3u8 集成源 ==========
+    print("\n🧪 步骤5: 测试 m3u8 可用性（整合源）...")
+    m3u8_api_site = OrderedDict()
+
+    # 测试普通源（多关键词，任一命中即保留）
+    print(f"   普通源: {len(normal_api_site)} 个，关键词: {M3U8_NORMAL_KEYWORDS}")
+    normal_m3u8_count = 0
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
+        futures = {}
+        for key, item in normal_api_site.items():
+            futures[ex.submit(test_m3u8, item, M3U8_NORMAL_KEYWORDS)] = key
+        for f in as_completed(futures):
+            key = futures[f]
+            try:
+                if f.result():
+                    m3u8_api_site[key] = normal_api_site[key]
+                    normal_m3u8_count += 1
+                    print(f"   ✅ m3u8 {normal_api_site[key]['name']}")
+            except Exception:
+                pass
+    print(f"   普通源 m3u8 通过: {normal_m3u8_count}/{len(normal_api_site)}")
+
+    # 测试成人源（成人关键词）
+    print(f"   成人源: {len(adult_api_site)} 个，关键词: {M3U8_ADULT_KEYWORDS}")
+    adult_m3u8_count = 0
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
+        futures = {}
+        for key, item in adult_api_site.items():
+            futures[ex.submit(test_m3u8, item, M3U8_ADULT_KEYWORDS)] = key
+        for f in as_completed(futures):
+            key = futures[f]
+            try:
+                if f.result():
+                    m3u8_api_site[key] = adult_api_site[key]
+                    adult_m3u8_count += 1
+                    print(f"   ✅ m3u8 {adult_api_site[key]['name']}")
+            except Exception:
+                pass
+    print(f"   成人源 m3u8 通过: {adult_m3u8_count}/{len(adult_api_site)}")
+
+    # 写入整合 m3u8 源文件
+    m3u8_result = build_result(m3u8_api_site, adult_m3u8_count, normal_m3u8_count)
+    m3u8_result["m3u8_tested"] = True
+    m3u8_result["m3u8_normal_keywords"] = M3U8_NORMAL_KEYWORDS
+    m3u8_result["m3u8_adult_keywords"] = M3U8_ADULT_KEYWORDS
+    write_json("sources.m3u8.json", m3u8_result)
+    m3u8_compact = build_compact(m3u8_api_site)
+    write_compact("sources.m3u8.compact.json", m3u8_compact)
+    write_base58("sources.m3u8.base58.txt", m3u8_compact)
+
     (ROOT / "maybe_sources.json").write_text(json.dumps(maybe, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (ROOT / "failed_sources.json").write_text(json.dumps(failed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     rate = len(included) / max(len(all_sources), 1) * 100
     adult_available = len(adult_api_site)
     normal_available = len(normal_api_site)
+    m3u8_total = len(m3u8_api_site)
     stats = (
         "# 视频源统计\n\n"
         f"- 更新时间: {now}\n"
@@ -567,6 +654,7 @@ def main() -> None:
         f"- 输出源数: {len(included)}\n"
         f"- 普通输出源: {normal_available}\n"
         f"- 成人输出源: {adult_available}\n"
+        f"- m3u8整合源: {m3u8_total} (普通{normal_m3u8_count}+成人{adult_m3u8_count})\n"
         f"- 明确失效/垃圾: {len(failed)}\n"
         f"- 输出率: {rate:.1f}%\n"
     )
@@ -578,7 +666,9 @@ def main() -> None:
     print(f"✅ 实测可用: {len(available)}")
     print(f"🟡 疑似可用: {len(maybe)}")
     print(f"📦 输出: {len(included)}")
-    print(f"🔞 成人输出: {adult_available}")
+    print(f"   普通源: {normal_available}")
+    print(f"   成人源: {adult_available}")
+    print(f"   m3u8整合: {m3u8_total}")
     print("=" * 50)
 
 
