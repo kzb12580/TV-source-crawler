@@ -612,18 +612,6 @@ def main() -> None:
         text = json.dumps(compact_dict, ensure_ascii=False, separators=(",", ":"))
         (ROOT / path).write_text(base58_encode_utf8(text) + "\n", encoding="utf-8")
 
-    # 普通源（主文件）——不测m3u8
-    normal_compact = build_compact(normal_api_site)
-    write_json("sources.json", build_result(normal_api_site, 0, len(normal_api_site)))
-    write_compact("sources.compact.json", normal_compact)
-    write_base58("sources.base58.txt", normal_compact)
-
-    # 成人源（独立文件）——不测m3u8
-    adult_compact = build_compact(adult_api_site)
-    write_json("sources.adult.json", build_result(adult_api_site, len(adult_api_site), 0))
-    write_compact("sources.adult.compact.json", adult_compact)
-    write_base58("sources.adult.base58.txt", adult_compact)
-
     # ========== 步骤5: m3u8 集成源 ==========
     print("\n🧪 步骤5: 测试 m3u8 可用性（整合源）...")
     m3u8_api_site = OrderedDict()
@@ -664,11 +652,36 @@ def main() -> None:
                 pass
     print(f"   成人源 m3u8 通过: {adult_m3u8_count}/{len(adult_api_site)}")
 
-    # 写入整合 m3u8 源文件
+    # 标记 m3u8 测试通过的源
+    for key in m3u8_api_site:
+        if key in api_site:
+            api_site[key]["m3u8_tested"] = True
+
+    # ========== 输出文件 ==========
+    # 1. 合并所有源（普通+成人+m3u8 标记）
+    all_compact = build_compact(api_site)
+    all_result = build_result(api_site, len(adult_api_site), len(normal_api_site))
+    all_result["m3u8_total"] = len(m3u8_api_site)
+    all_result["m3u8_normal"] = normal_m3u8_count
+    all_result["m3u8_adult"] = adult_m3u8_count
+    write_json("sources.json", all_result)
+    write_compact("sources.compact.json", all_compact)
+    write_base58("sources.base58.txt", all_compact)
+
+    # 2. 普通源（独立文件）
+    normal_compact = build_compact(normal_api_site)
+    write_json("sources.normal.json", build_result(normal_api_site, 0, len(normal_api_site)))
+    write_compact("sources.normal.compact.json", normal_compact)
+    write_base58("sources.normal.base58.txt", normal_compact)
+
+    # 3. 成人源（独立文件）
+    adult_compact = build_compact(adult_api_site)
+    write_json("sources.adult.json", build_result(adult_api_site, len(adult_api_site), 0))
+    write_compact("sources.adult.compact.json", adult_compact)
+    write_base58("sources.adult.base58.txt", adult_compact)
+
+    # 4. m3u8 源（独立文件）
     m3u8_result = build_result(m3u8_api_site, adult_m3u8_count, normal_m3u8_count)
-    m3u8_result["m3u8_tested"] = True
-    m3u8_result["m3u8_normal_keywords"] = M3U8_NORMAL_KEYWORDS
-    m3u8_result["m3u8_adult_keywords"] = M3U8_ADULT_KEYWORDS
     write_json("sources.m3u8.json", m3u8_result)
     m3u8_compact = build_compact(m3u8_api_site)
     write_compact("sources.m3u8.compact.json", m3u8_compact)
@@ -688,7 +701,7 @@ def main() -> None:
         f"- 候选源数: {len(all_sources)}\n"
         f"- 实测可用: {len(available)}\n"
         f"- 疑似可用/慢源: {len(maybe)}\n"
-        f"- 输出源数: {len(included)}\n"
+        f"- 输出源数: {len(included)}（合并在一个文件）\n"
         f"- 普通输出源: {normal_available}\n"
         f"- 成人输出源: {adult_available}\n"
         f"- m3u8整合源: {m3u8_total} (普通{normal_m3u8_count}+成人{adult_m3u8_count})\n"
