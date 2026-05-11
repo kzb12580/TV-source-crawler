@@ -47,6 +47,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add sources.json sources.compact.json sources.base58.txt sources.adult.json sources.adult.compact.json sources.adult.base58.txt sources.m3u8.json sources.m3u8.compact.json sources.m3u8.base58.txt STATS.md failed_sources.json manual_sources.json crawler.py .github/workflows/update-sources.yml
+          git add sources.json sources.compact.json sources.base58.txt sources.adult.json sources.adult.compact.json sources.adult.base58.txt sources.m3u8.json sources.m3u8.compact.json sources.m3u8.base58.txt STATS.md failed_sources.json maybe_sources.json manual_sources.json crawler.py .github/workflows/update-sources.yml
           git diff --quiet && git diff --staged --quiet || git commit -m "Update sources - $(date '+%Y-%m-%d')"
           git push

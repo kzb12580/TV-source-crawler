@@ -48,7 +48,7 @@ M3U8_NORMAL_KEYWORDS = [
 # m3u8 测试关键词：成人源用常见成人内容名
 M3U8_ADULT_KEYWORDS = ["麻豆", "娜娜", "蜜桃"]
 GITHUB_SEARCH_PER_PAGE = 30
-GITHUB_SEARCH_MAX_ITEMS = 180
+GITHUB_SEARCH_MAX_ITEMS = 300
 # conservative: 只输出实测可用；balanced: 输出可用+疑似可用；loose: 只剔除明显垃圾/示例源
 STRICTNESS = os.environ.get("STRICTNESS", "balanced").lower()
 TEST_KEYWORDS = ("热门", "电影")
@@ -88,7 +88,13 @@ API_URL_RE = re.compile(
 ADULT_HINTS = (
     "AV-", "🔞", "成人", "福利", "麻豆", "番号", "伦理", "情色", "黄色", "黄黄",
     "老色", "色猫", "色南", "色嗨", "白嫖", "淫", "香奶", "奶香", "杏吧", "小鸡",
-    "91", "souav", "gayapi", "sex", "av", "xrbsp", "kxgav", "msnii", "gdlsp",
+    "91", "souav", "gayapi", "sex", "xrbsp", "kxgav", "msnii", "gdlsp",
+)
+
+# 需要单词边界匹配的关键词（避免 "av" 误匹配 "available"/"havfun" 等）
+ADULT_HINTS_RE = re.compile(
+    r"(?<![a-z])(?:av|sese|caoliu|cl2|91porn)(?![a-z])",
+    re.IGNORECASE,
 )
 
 
@@ -96,8 +102,7 @@ def normalize_api(api: str) -> str:
     api = (api or "").strip()
     if not api:
         return ""
-    # 统一常见 http/https 重复；保留 path，因为不同 path 可能是不同接口。
-    api = api.replace("http://", "https://", 1)
+    # 保留原始协议（http/https），只统一尾部斜杠
     api = re.sub(r"/+$", "", api)
     return api
 
@@ -122,7 +127,11 @@ def is_adult_source(item: dict[str, Any]) -> bool:
     if item.get("is_adult") is True:
         return True
     text = f"{item.get('name', '')} {item.get('api', '')} {item.get('detail', '')}".lower()
-    return any(h.lower() in text for h in ADULT_HINTS)
+    if any(h.lower() in text for h in ADULT_HINTS):
+        return True
+    if ADULT_HINTS_RE.search(text):
+        return True
+    return False
 
 
 def iter_items(data: Any):
@@ -176,6 +185,22 @@ def merge_source(pool: OrderedDict[str, dict[str, Any]], item: dict[str, Any]) -
     api = normalized["api"]
     old = pool.get(api)
     if not old:
+        # 检查是否存在同域名的 http/https 版本，优先保留 https
+        parsed = urlparse(api)
+        alt_proto = "https" if parsed.scheme == "http" else "http"
+        alt_api = api.replace(f"{parsed.scheme}://", f"{alt_proto}://", 1)
+        alt_old = pool.get(alt_api)
+        if alt_old:
+            # 如果新源是 https 而旧源是 http，用 https 替换 http
+            if parsed.scheme == "https":
+                del pool[alt_api]
+                pool[api] = normalized
+                return True
+            # 否则保留已有的（https 优先），只合并元数据
+            alt_old["is_adult"] = bool(alt_old.get("is_adult")) or bool(normalized.get("is_adult"))
+            if (not alt_old.get("detail")) and normalized.get("detail"):
+                alt_old["detail"] = normalized["detail"]
+            return False
         pool[api] = normalized
         return True
 
