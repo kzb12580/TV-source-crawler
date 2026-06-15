@@ -57,7 +57,7 @@
       "is_adult": true,
       "status": "available"
     },
-    "naixxzy_com_2": {
+    "naixxzy_com": {
       "name": "AV-奶香香",
       "api": "https://Naixxzy.com/api.php/provide/vod",
       "detail": "https://Naixxzy.com",
@@ -76,7 +76,7 @@
     "xingba111_com": {
       "name": "AV-杏吧资源",
       "api": "https://xingba111.com/api.php/provide/vod",
-      "detail": "https://xingba111.com",
+      "detail": "",
       "is_adult": true,
       "status": "available",
       "m3u8_tested": true
@@ -86,8 +86,7 @@
       "api": "https://slapibf.com/api.php/provide/vod",
       "detail": "https://slapibf.com",
       "is_adult": true,
-      "status": "available",
-      "m3u8_tested": true
+      "status": "available"
     },
     "xrbsp_com": {
       "name": "AV-淫水机资源",
@@ -110,14 +109,6 @@
       "detail": "https://www.kxgav.com",
       "is_adult": true,
       "status": "available"
-    },
-    "api_bwzyz_com": {
-      "name": "AV-百万资源",
-      "api": "https://api.bwzyz.com/api.php/provide/vod",
-      "detail": "https://api.bwzyz.com",
-      "is_adult": true,
-      "status": "available",
-      "m3u8_tested": true
     },
     "jingpinx_com": {
       "name": "AV-精品资源",
@@ -193,13 +184,6 @@
       "is_adult": true,
       "status": "available",
       "m3u8_tested": true
-    },
-    "hsckzy_vip": {
-      "name": "发现源-hsckzy.vip",
-      "api": "https://hsckzy.vip/api.php/provide/vod",
-      "detail": "https://hsckzy.vip",
-      "is_adult": true,
-      "status": "available"
     },
     "dadiapi_com_2": {
       "name": "成人01",
@@ -303,8 +287,7 @@
       "api": "https://beiyong.slapibf.com/api.php/provide/vod",
       "detail": "https://slapibf.com",
       "is_adult": true,
-      "status": "available",
-      "m3u8_tested": true
+      "status": "available"
     },
     "api_ddapi_cc": {
       "name": "🔞滴滴资源",
@@ -360,11 +343,11 @@
       "m3u8_tested": true
     }
   },
-  "update_date": "2026-06-08T06:39:10.840432",
-  "total_sources": 47,
-  "total_available": 137,
+  "update_date": "2026-06-15T07:13:11.772040",
+  "total_sources": 45,
+  "total_available": 109,
   "total_maybe": 0,
-  "total_included": 47,
-  "total_adult": 47,
+  "total_included": 45,
+  "total_adult": 45,
   "total_normal": 0
 }
