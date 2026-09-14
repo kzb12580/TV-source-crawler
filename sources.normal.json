@@ -155,18 +155,18 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "api_wujinapi_com": {
-      "name": "TV-无尽资源",
-      "api": "https://api.wujinapi.com/api.php/provide/vod",
-      "detail": "https://wujinzy.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
     "api_wujinapi_net": {
       "name": "TV-无尽资源",
       "api": "https://api.wujinapi.net/api.php/provide/vod",
       "detail": "https://api.wujinapi.net",
+      "is_adult": false,
+      "status": "available",
+      "m3u8_tested": true
+    },
+    "api_wujinapi_com": {
+      "name": "TV-无尽资源",
+      "api": "https://api.wujinapi.com/api.php/provide/vod",
+      "detail": "https://wujinzy.com",
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
@@ -182,7 +182,7 @@
     "api_wsyzy_net": {
       "name": "TV-无水印资源",
       "api": "https://api.wsyzy.net/api.php/provide/vod",
-      "detail": "https://api.wsyzy.net",
+      "detail": "",
       "is_adult": false,
       "status": "available"
     },
@@ -291,6 +291,27 @@
       "status": "available",
       "m3u8_tested": true
     },
+    "dbzy_tv": {
+      "name": "TV-豆瓣资源",
+      "api": "https://dbzy.tv/api.php/provide/vod",
+      "detail": "https://dbzy.tv",
+      "is_adult": false,
+      "status": "available"
+    },
+    "caiji_dbzy5_com": {
+      "name": "TV-豆瓣资源3",
+      "api": "https://caiji.dbzy5.com/api.php/provide/vod",
+      "detail": "https://dbzy.tv",
+      "is_adult": false,
+      "status": "available"
+    },
+    "caiji_dbzy5_com_2": {
+      "name": "TV-豆瓣资源3",
+      "api": "https://caiji.dbzy5.com/api.php/provide/vod/from/dbm3u8/at/josn",
+      "detail": "https://dbzy.tv",
+      "is_adult": false,
+      "status": "available"
+    },
     "hhzyapi_com": {
       "name": "TV-豪华资源",
       "api": "https://hhzyapi.com/api.php/provide/vod",
@@ -389,6 +410,21 @@
       "status": "available",
       "m3u8_tested": true
     },
+    "s_360zyzz_com": {
+      "name": "⭐360",
+      "api": "https://360zyzz.com/api.php/provide/vod",
+      "detail": "https://360zy.com",
+      "is_adult": false,
+      "status": "available",
+      "m3u8_tested": true
+    },
+    "tyyszyapi_com": {
+      "name": "⭐天涯",
+      "api": "https://tyyszyapi.com/api.php/provide/vod",
+      "detail": "https://tyyszyapi.com",
+      "is_adult": false,
+      "status": "available"
+    },
     "by_bfzyapi_com": {
       "name": "⭐暴风",
       "api": "http://by.bfzyapi.com/api.php/provide/vod",
@@ -422,17 +458,9 @@
     "ffzy1_tv": {
       "name": "⭐非凡",
       "api": "https://ffzy1.tv/api.php/provide/vod",
-      "detail": "",
+      "detail": "https://ffzy1.tv",
       "is_adult": false,
       "status": "available"
-    },
-    "s_360zyzz_com": {
-      "name": "发现源-360zyzz.com",
-      "api": "https://360zyzz.com/api.php/provide/vod",
-      "detail": "https://360zy.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
     },
     "api_maoyanapi_top": {
       "name": "发现源-api.maoyanapi.top",
@@ -450,27 +478,12 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "tyyszyapi_com": {
-      "name": "发现源-tyyszyapi.com",
-      "api": "https://tyyszyapi.com/api.php/provide/vod",
-      "detail": "https://tyyszyapi.com",
-      "is_adult": false,
-      "status": "available"
-    },
     "yonghu_ffzyapi8_com": {
       "name": "发现源-yonghu.ffzyapi8.com",
       "api": "https://yonghu.ffzyapi8.com/api.php/provide/vod",
       "detail": "https://yonghu.ffzyapi8.com",
       "is_adult": false,
       "status": "available"
-    },
-    "cdn_dzzyapi_com": {
-      "name": "大众资源采集接口",
-      "api": "https://cdn.dzzyapi.com/api.php/provide/vod",
-      "detail": "https://cdn.dzzyapi.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
     },
     "tyyszyapi_com_2": {
       "name": "天涯影视",
@@ -699,11 +712,11 @@
       "status": "available"
     }
   },
-  "update_date": "2026-09-07T06:56:32.662895",
-  "total_sources": 92,
-  "total_available": 155,
+  "update_date": "2026-09-14T07:29:39.593263",
+  "total_sources": 94,
+  "total_available": 156,
   "total_maybe": 0,
-  "total_included": 92,
+  "total_included": 94,
   "total_adult": 0,
-  "total_normal": 92
+  "total_normal": 94
 }
