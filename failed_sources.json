@@ -8,20 +8,20 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "TV-百度云资源",
-    "api": "https://api.apibdzy.com/api.php/provide/vod",
-    "detail": "https://api.apibdzy.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 403/5544"
-  },
-  {
     "name": "TV-小猫咪资源",
     "api": "https://zy.xmm.hk/api.php/provide/vod",
     "detail": "https://zy.xmm.hk",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
+  },
+  {
+    "name": "TV-百度云资源",
+    "api": "https://api.apibdzy.com/api.php/provide/vod",
+    "detail": "https://api.apibdzy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 403/5544"
   },
   {
     "name": "TV-豆瓣资源",
@@ -37,47 +37,7 @@
     "detail": "https://p2100.net",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 403/5645"
-  },
-  {
-    "name": "TV-卧龙资源",
-    "api": "https://wolongzyw.com/api.php/provide/vod",
-    "detail": "https://wolongzyw.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/6990"
-  },
-  {
-    "name": "TV-卧龙点播",
-    "api": "https://collect.wolongzyw.com/api.php/provide/vod",
-    "detail": "https://collect.wolongzyw.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/6990"
-  },
-  {
-    "name": "TV-黑木耳点播",
-    "api": "https://json02.heimuer.xyz/api.php/provide/vod",
-    "detail": "https://json02.heimuer.xyz",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/43"
-  },
-  {
-    "name": "TV-旺旺资源",
-    "api": "https://api.wwzy.tv/api.php/provide/vod",
-    "detail": "https://api.wwzy.tv",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "api-text"
-  },
-  {
-    "name": "TV-旺旺短剧",
-    "api": "https://wwzy.tv/api.php/provide/vod",
-    "detail": "https://wwzy.tv",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "api-text"
+    "reason": "HTTP 403/5602"
   },
   {
     "name": "TV-黑木耳",
@@ -88,12 +48,20 @@
     "reason": "HTTP 404/43"
   },
   {
-    "name": "AV-玉兔资源",
-    "api": "https://apiyutu.com/api.php/provide/vod",
-    "detail": "https://apiyutu.com",
+    "name": "TV-黑木耳点播",
+    "api": "https://json02.heimuer.xyz/api.php/provide/vod",
+    "detail": "https://json02.heimuer.xyz",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/43"
+  },
+  {
+    "name": "AV-百万资源",
+    "api": "https://api.bwzyz.com/api.php/provide/vod",
+    "detail": "https://api.bwzyz.com",
     "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 500/7104"
+    "reason": "ConnectionError"
   },
   {
     "name": "AV-色南国",
@@ -104,12 +72,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "AV-老色逼资源",
-    "api": "https://apilsbzy1.com/api.php/provide/vod",
-    "detail": "https://apilsbzy1.com",
-    "is_adult": true,
+    "name": "TV-旺旺短剧",
+    "api": "https://wwzy.tv/api.php/provide/vod",
+    "detail": "https://wwzy.tv",
+    "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 500/7104"
+    "reason": "api-text"
   },
   {
     "name": "AV-快播资源",
@@ -125,15 +93,7 @@
     "detail": "https://api.maozyapi.com",
     "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 521/6993"
-  },
-  {
-    "name": "AV-AIvin",
-    "api": "https://lbapiby.com/api.php/provide/vod",
-    "detail": "http://lbapiby.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "SSLError"
+    "reason": "HTTP 521/6994"
   },
   {
     "name": "TV-蜂巢片库",
@@ -144,12 +104,20 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "TV-饭团影视",
-    "api": "https://www.fantuan.tv/api.php/provide/vod",
-    "detail": "https://www.fantuan.tv",
+    "name": "AV-AIvin",
+    "api": "https://lbapiby.com/api.php/provide/vod",
+    "detail": "http://lbapiby.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "TV-旺旺资源",
+    "api": "https://api.wwzy.tv/api.php/provide/vod",
+    "detail": "https://api.wwzy.tv",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "api-text"
   },
   {
     "name": "AV-番号资源",
@@ -160,57 +128,49 @@
     "reason": "SSLError"
   },
   {
-    "name": "AV-百万资源",
-    "api": "https://api.bwzyz.com/api.php/provide/vod",
-    "detail": "https://api.bwzyz.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "TV-快车资源",
-    "api": "https://caiji.kuaichezy.org/api.php/provide",
-    "detail": "https://caiji.kuaichezy.org",
+    "name": "TV-卧龙点播",
+    "api": "https://collect.wolongzyw.com/api.php/provide/vod",
+    "detail": "https://collect.wolongzyw.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/0"
+    "reason": "HTTP 200/6990"
   },
   {
-    "name": "发现源-zy.jinchancaiji.com",
-    "api": "https://zy.jinchancaiji.com/api.php/provide/vod",
-    "detail": "https://zy.jinchancaiji.com",
+    "name": "TV-淘片资源",
+    "api": "https://taopianapi.com/cjapi/sda/vod",
+    "detail": "https://taopianapi.com",
     "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🔞91-精品-",
-    "api": "https://91jpzyw.com/api.php/provide/vod",
-    "detail": "https://91jpzyw.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🔞优优资源",
-    "api": "https://www.yyzywcj.com/api.php/provide/vod",
-    "detail": "https://www.yyzywcj.com",
-    "is_adult": true,
     "status": "failed",
     "reason": "SSLError"
   },
   {
-    "name": "🔞-幸资源-",
-    "api": "https://xzybb2.com/api.php/provide/vod",
-    "detail": "https://xzytv.com",
-    "is_adult": true,
+    "name": "TV-卧龙资源",
+    "api": "https://wolongzyw.com/api.php/provide/vod",
+    "detail": "https://wolongzyw.com",
+    "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/122"
+    "reason": "HTTP 200/6990"
   },
   {
-    "name": "🔞辣椒资源",
-    "api": "https://pz.168188.dpdns.org/?url=https://apilj.com/api.php/provide/vod",
-    "detail": "https://apilj.com",
+    "name": "TV-饭团影视",
+    "api": "https://www.fantuan.tv/api.php/provide/vod",
+    "detail": "https://www.fantuan.tv",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "TV-魔爪资源",
+    "api": "https://mozhuazy.com/api.php/provide/vod",
+    "detail": "https://mozhuazy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "AV-细胞采集",
+    "api": "https://www.xxibaozyw.com/api.php/provide/vod",
+    "detail": "https://www.xxibaozyw.com",
     "is_adult": true,
     "status": "failed",
     "reason": "ConnectionError"
@@ -248,12 +208,36 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "TV-七七影视",
-    "api": "https://www.qiqidys.com/api.php/provide/vod",
-    "detail": "https://www.qiqidys.com",
+    "name": "发现源-zy.jinchancaiji.com",
+    "api": "https://zy.jinchancaiji.com/api.php/provide/vod",
+    "detail": "https://zy.jinchancaiji.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🔞91-精品-",
+    "api": "https://91jpzyw.com/api.php/provide/vod",
+    "detail": "https://91jpzyw.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "TV-快车资源",
+    "api": "https://caiji.kuaichezy.org/api.php/provide",
+    "detail": "https://caiji.kuaichezy.org",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/0"
+  },
+  {
+    "name": "🔞辣椒资源",
+    "api": "https://pz.168188.dpdns.org/?url=https://apilj.com/api.php/provide/vod",
+    "detail": "https://apilj.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
   },
   {
     "name": "TV-金马资源网",
@@ -264,12 +248,20 @@
     "reason": "SSLError"
   },
   {
-    "name": "AV-丝袜资源",
-    "api": "https://siwazyw.tv/api.php/provide/vod",
-    "detail": "https://siwazyw.tv",
+    "name": "🔞-幸资源-",
+    "api": "https://xzybb2.com/api.php/provide/vod",
+    "detail": "https://xzytv.com",
     "is_adult": true,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 200/122"
+  },
+  {
+    "name": "🔞优优资源",
+    "api": "https://www.yyzywcj.com/api.php/provide/vod",
+    "detail": "https://www.yyzywcj.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "SSLError"
   },
   {
     "name": "AV-老鸭资源",
@@ -280,10 +272,26 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "TV-华为吧",
-    "api": "https://cjhwba.com/api.php/provide/vod",
-    "detail": "https://cjhwba.com",
+    "name": "AV-丝袜资源",
+    "api": "https://siwazyw.tv/api.php/provide/vod",
+    "detail": "https://siwazyw.tv",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "TV-七七影视",
+    "api": "https://www.qiqidys.com/api.php/provide/vod",
+    "detail": "https://www.qiqidys.com",
     "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "🔞香蕉资源",
+    "api": "https://www.xiangjiaozyw.com/api.php/provide/vod",
+    "detail": "https://www.xiangjiaozyw.com",
+    "is_adult": true,
     "status": "failed",
     "reason": "ConnectionError"
   },
@@ -304,16 +312,16 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵乐视",
-    "api": "https://leshiapi.com/api.php/provide/vod",
+    "name": "🔵小黄人",
+    "api": "https://iqyi.xiaohuangrentv.com/api.php/provide/vod",
     "detail": "",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵小黄人",
-    "api": "https://iqyi.xiaohuangrentv.com/api.php/provide/vod",
+    "name": "🔵乐视",
+    "api": "https://leshiapi.com/api.php/provide/vod",
     "detail": "",
     "is_adult": false,
     "status": "failed",
@@ -328,44 +336,36 @@
     "reason": "HTTP 403/5542"
   },
   {
-    "name": "TV-魔爪资源",
-    "api": "https://mozhuazy.com/api.php/provide/vod",
-    "detail": "https://mozhuazy.com",
+    "name": "🔵飞速资源3",
+    "api": "https://m3u8.feisuzyapi.com/api.php/provide/vod",
+    "detail": "https://m3u8.feisuzyapi.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵天空资源1",
-    "api": "https://m3u8.tiankongapi.com/api.php/provide/vod",
-    "detail": "https://m3u8.tiankongapi.com",
+    "name": "TV-爱奇艺资源",
+    "api": "https://iqiyizyapi.com/api.php/provide/vod",
+    "detail": "https://iqiyizyapi.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 503/190"
   },
   {
-    "name": "🔵天空资源",
-    "api": "https://api.tiankongapi.com/api.php/provide/vod",
-    "detail": "https://api.tiankongapi.com",
+    "name": "🔵飞速资源2",
+    "api": "http://fszy1.com/api.php/provide/vod",
+    "detail": "http://fszy1.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 403/93"
   },
   {
-    "name": "🔵天空资源(tkm3u8)",
-    "api": "https://m3u8.tiankongapi.com/api.php/provide/vod/from/tkm3u8",
-    "detail": "",
+    "name": "🔵飞速",
+    "api": "https://www.feisuzyapi.com/api.php/provide/vod",
+    "detail": "https://www.feisuzyapi.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🔵八戒资源(php)",
-    "api": "http://cj.bajiecaiji.com/inc/apijson_vod.php",
-    "detail": "https://cj.bajiecaiji.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 200/122"
   },
   {
     "name": "🔵快车",
@@ -376,34 +376,34 @@
     "reason": "SSLError"
   },
   {
-    "name": "TV-快车资源",
-    "api": "https://caiji.kczyapi.com/api.php/provide/vod",
-    "detail": "https://caiji.kczyapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "🔵奇虎资源",
-    "api": "https://caiji.qhzyapi.com/api.php/provide/vod",
-    "detail": "https://caiji.qhzyapi.com",
+    "name": "🔵八戒资源(php)",
+    "api": "http://cj.bajiecaiji.com/inc/apijson_vod.php",
+    "detail": "https://cj.bajiecaiji.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵宝片",
-    "api": "https://zpsps.com/api.php/provide/vod",
-    "detail": "",
+    "name": "🔵天空资源",
+    "api": "https://api.tiankongapi.com/api.php/provide/vod",
+    "detail": "https://api.tiankongapi.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 403/12"
+    "reason": "HTTP 404/43"
   },
   {
-    "name": "🔵天翼资源(json)",
-    "api": "https://www.911ysw.top/tianyi.php/provide/vod/at/json",
+    "name": "🔵天空资源1",
+    "api": "https://m3u8.tiankongapi.com/api.php/provide/vod",
+    "detail": "https://m3u8.tiankongapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/43"
+  },
+  {
+    "name": "🔵天空资源(tkm3u8)",
+    "api": "https://m3u8.tiankongapi.com/api.php/provide/vod/from/tkm3u8",
     "detail": "",
-    "is_adult": true,
+    "is_adult": false,
     "status": "failed",
     "reason": "HTTP 404/43"
   },
@@ -416,6 +416,30 @@
     "reason": "api-text"
   },
   {
+    "name": "🔵奇虎资源",
+    "api": "https://caiji.qhzyapi.com/api.php/provide/vod",
+    "detail": "https://caiji.qhzyapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "TV-快车资源",
+    "api": "https://caiji.kczyapi.com/api.php/provide/vod",
+    "detail": "https://caiji.kczyapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "🔵天翼资源(json)",
+    "api": "https://www.911ysw.top/tianyi.php/provide/vod/at/json",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "HTTP 404/43"
+  },
+  {
     "name": "🔵天翼资源",
     "api": "https://www.911ysw.top/tianyi.php/provide/vod",
     "detail": "https://www.911ysw.top",
@@ -424,12 +448,20 @@
     "reason": "HTTP 404/43"
   },
   {
-    "name": "🔵飘花",
-    "api": "http://www.ahjiuman.com/api.php/provide/vod/at/json",
+    "name": "TV-华为吧",
+    "api": "https://cjhwba.com/api.php/provide/vod",
+    "detail": "https://cjhwba.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/0"
+  },
+  {
+    "name": "🔵宝片",
+    "api": "https://zpsps.com/api.php/provide/vod",
     "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 404/150"
+    "reason": "HTTP 404/0"
   },
   {
     "name": "🔵快看资源",
@@ -440,14 +472,6 @@
     "reason": "SSLError"
   },
   {
-    "name": "发现源-api.bwzym3u8.com",
-    "api": "https://api.bwzym3u8.com/api.php/provide/vod",
-    "detail": "https://api.bwzym3u8.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
     "name": "AV-草榴资源",
     "api": "https://www.caoliuzyw.com/api.php/prodao/vod",
     "detail": "https://www.caoliuzyw.com",
@@ -456,12 +480,20 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵映迷资源",
-    "api": "https://www.inmi.app/api.php/provide/vod",
-    "detail": "https://www.inmi.app",
-    "is_adult": false,
+    "name": "AV-辣椒资源黄黄",
+    "api": "https://apilj.com/api.php/provide",
+    "detail": "https://apilj.com",
+    "is_adult": true,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "HTTP 200/0"
+  },
+  {
+    "name": "AV-易看资源",
+    "api": "https://api.yikanapi.com/api.php/provide/vod",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
   },
   {
     "name": "发现源-api.example.com",
@@ -488,14 +520,6 @@
     "reason": "obvious-junk"
   },
   {
-    "name": "🔵映迷",
-    "api": "https://www.inmi.app/api.php/provide/vod/at/xml",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
     "name": "发现源-example.com",
     "api": "https://www.example.com/api.php/provide/vod",
     "detail": "https://www.example.com",
@@ -512,33 +536,33 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "AV-易看资源",
-    "api": "https://api.yikanapi.com/api.php/provide/vod",
+    "name": "🔵飘花",
+    "api": "http://www.ahjiuman.com/api.php/provide/vod/at/json",
     "detail": "",
-    "is_adult": true,
+    "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 404/150"
   },
   {
-    "name": "AV-辣椒资源黄黄",
-    "api": "https://apilj.com/api.php/provide",
-    "detail": "https://apilj.com",
-    "is_adult": true,
+    "name": "🔵映迷资源",
+    "api": "https://www.inmi.app/api.php/provide/vod",
+    "detail": "https://www.inmi.app",
+    "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/0"
+    "reason": "SSLError"
+  },
+  {
+    "name": "🔵映迷",
+    "api": "https://www.inmi.app/api.php/provide/vod/at/xml",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
   },
   {
     "name": "火鸟资源",
     "api": "https://hnzyapi.com/api.php/provide/vod",
     "detail": "https://hnzyapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "量子资源",
-    "api": "https://api.liangzizy.com/inc/apijson_vod.php",
-    "detail": "https://api.liangzizy.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -576,6 +600,14 @@
     "reason": "obvious-junk"
   },
   {
+    "name": "量子资源",
+    "api": "https://api.liangzizy.com/inc/apijson_vod.php",
+    "detail": "https://api.liangzizy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
     "name": "非凡资源",
     "api": "https://ffzyapi.com/api.php/provide/vod",
     "detail": "https://ffzyapi.com",
@@ -584,28 +616,36 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵私密影院",
-    "api": "https://simiyy.com/api.php/provide/vod",
+    "name": "发现源-api.bwzym3u8.com",
+    "api": "https://api.bwzym3u8.com/api.php/provide/vod",
+    "detail": "https://api.bwzym3u8.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🔵39影视(json)",
+    "api": "https://www.39kan.com/api.php/provide/vod/at/json",
     "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 403/150"
+    "reason": "HTTP 523/7177"
   },
   {
-    "name": "发现源-yutuzy10.com",
-    "api": "https://yutuzy10.com/api.php/provide/vod",
-    "detail": "https://yutuzy10.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "HTTP 500/7104"
-  },
-  {
-    "name": "🎬飘零资源",
-    "api": "https://pz.v88.qzz.io/?url=https://p2100.net/api.php/provide/vod",
-    "detail": "https://p2100.net",
+    "name": "🔵39影视",
+    "api": "https://www.39kan.com/api.php/provide/vod",
+    "detail": "https://www.39kan.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 403/5837"
+    "reason": "HTTP 523/7177"
+  },
+  {
+    "name": "百度资源",
+    "api": "https://api.1080zyku.com/inc/apijson_vod.php",
+    "detail": "https://api.1080zyku.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/16"
   },
   {
     "name": "AV-gay资源",
@@ -616,20 +656,28 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "爱短剧.cc",
-    "api": "https://www.aiduanju.cc",
-    "detail": "https://www.aiduanju.cc",
+    "name": "🎬百度云zy",
+    "api": "https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod",
+    "detail": "https://bdzy1.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "HTTP 403/5736"
   },
   {
-    "name": "🔵飞速",
-    "api": "https://www.feisuzyapi.com/api.php/provide/vod",
-    "detail": "https://www.feisuzyapi.com",
+    "name": "🔵私密影院",
+    "api": "https://simiyy.com/api.php/provide/vod",
+    "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 403/150"
+  },
+  {
+    "name": "发现源-pz.v88.qzz.io",
+    "api": "https://pz.v88.qzz.io/?url=https://lovedan.net/api.php/provide/vod",
+    "detail": "https://pz.v88.qzz.io",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 403/5732"
   },
   {
     "name": "发现源-example2.com",
@@ -640,6 +688,14 @@
     "reason": "HTTP 403/5570"
   },
   {
+    "name": "爱短剧.cc",
+    "api": "https://www.aiduanju.cc",
+    "detail": "https://www.aiduanju.cc",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
     "name": "AV-AIvin",
     "api": "http://lbapiby.com/api.php/provide/vod/at/json",
     "detail": "http://lbapiby.com",
@@ -648,44 +704,12 @@
     "reason": "HTTP 502/154"
   },
   {
-    "name": "🎬百度云zy",
-    "api": "https://pz.v88.qzz.io/?url=https://api.apibdzy.com/api.php/provide/vod",
-    "detail": "https://bdzy1.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/7140"
-  },
-  {
-    "name": "🔵飞速资源3",
-    "api": "https://m3u8.feisuzyapi.com/api.php/provide/vod",
-    "detail": "https://m3u8.feisuzyapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
     "name": "⭐豆瓣",
     "api": "https://caiji.doubanzy.cc/api.php/provide/vod",
     "detail": "",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
-  },
-  {
-    "name": "百度资源",
-    "api": "https://api.1080zyku.com/inc/apijson_vod.php",
-    "detail": "https://api.1080zyku.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/479"
-  },
-  {
-    "name": "🔵飞速资源2",
-    "api": "http://fszy1.com/api.php/provide/vod",
-    "detail": "http://fszy1.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/2271"
   },
   {
     "name": "示例视频源",
@@ -744,28 +768,12 @@
     "reason": "obvious-junk"
   },
   {
-    "name": "🔅酷影视ᴴ",
-    "api": "https://www.tvkuys.xyz/api.php/app",
-    "detail": "https://www.tvkuys.xyz",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/10"
-  },
-  {
     "name": "⭐艾旦",
     "api": "https://lovedan.net/api.php/provide/vod",
     "detail": "https://lovedan.net",
     "is_adult": false,
     "status": "failed",
     "reason": "HTTP 403/5540"
-  },
-  {
-    "name": "🔅ok资源ᴴ",
-    "api": "https://api.okzy.org/api.php/provide/vod",
-    "detail": "https://api.okzy.org",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
   },
   {
     "name": "🔵四九资源",
@@ -776,20 +784,28 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵雨哥哥影视",
-    "api": "http://cj.baozi66.top:66/api.php/provide/vod",
-    "detail": "",
+    "name": "🔅酷影视ᴴ",
+    "api": "https://www.tvkuys.xyz/api.php/app",
+    "detail": "https://www.tvkuys.xyz",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 404/10"
   },
   {
-    "name": "...",
-    "api": "https://.../api.php/provide/vod",
-    "detail": "https://...",
+    "name": "🔅ok资源ᴴ",
+    "api": "https://api.okzy.org/api.php/provide/vod",
+    "detail": "https://api.okzy.org",
     "is_adult": false,
     "status": "failed",
-    "reason": "InvalidURL"
+    "reason": "SSLError"
+  },
+  {
+    "name": "🔞光速资源",
+    "api": "https://guangsuzy.com/api.php/provide/vod",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "HTTP 404/1417"
   },
   {
     "name": "豆瓣资源3",
@@ -800,20 +816,12 @@
     "reason": "HTTP 200/122"
   },
   {
-    "name": "AV-黄瓜资源",
-    "api": "https://www.zy018.com/api.php/provide/vod",
-    "detail": "",
+    "name": "🔞成人25",
+    "api": "http://99zy.pw/api.php/provide/vod",
+    "detail": "https://99zy.pw",
     "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 404/138"
-  },
-  {
-    "name": "发现源-pz.v88.qzz.io",
-    "api": "https://pz.v88.qzz.io/?url=https://lovedan.net/api.php/provide/vod",
-    "detail": "https://pz.v88.qzz.io",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/423443"
+    "reason": "ConnectionError"
   },
   {
     "name": "⭐旺旺",
@@ -824,12 +832,12 @@
     "reason": "api-text"
   },
   {
-    "name": "🔞光速资源",
-    "api": "https://guangsuzy.com/api.php/provide/vod",
+    "name": "🔵雨哥哥影视",
+    "api": "http://cj.baozi66.top:66/api.php/provide/vod",
     "detail": "",
-    "is_adult": true,
+    "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 404/1417"
+    "reason": "ConnectionError"
   },
   {
     "name": "🔞草榴资源",
@@ -848,12 +856,20 @@
     "reason": "HTTP 404/146"
   },
   {
-    "name": "TV-淘片资源",
-    "api": "https://taopianapi.com/cjapi/sda/vod",
-    "detail": "https://taopianapi.com",
-    "is_adult": false,
+    "name": "🔞成人20",
+    "api": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
+    "detail": "",
+    "is_adult": true,
     "status": "failed",
     "reason": "SSLError"
+  },
+  {
+    "name": "🔞BT天堂",
+    "api": "http://bttcj.com/inc/sapi.php",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "HTTP 404/3223"
   },
   {
     "name": "🔞快播资源",
@@ -862,22 +878,6 @@
     "is_adult": true,
     "status": "failed",
     "reason": "ConnectionError"
-  },
-  {
-    "name": "🔅KK资源ᴴ",
-    "api": "https://kkzy.me/api.php/provide/vod",
-    "detail": "https://kkzy.me",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "🔞成人20",
-    "api": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
-    "detail": "",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "SSLError"
   },
   {
     "name": "🔞成人26",
@@ -896,20 +896,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔞BT天堂",
-    "api": "http://bttcj.com/inc/sapi.php",
+    "name": "AV-黄瓜资源",
+    "api": "https://www.zy018.com/api.php/provide/vod",
     "detail": "",
     "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 404/3223"
-  },
-  {
-    "name": "🔞泡芙资源",
-    "api": "http://zmcj88.com/api?ac=list",
-    "detail": "",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "HTTP 200/482"
+    "reason": "HTTP 404/138"
   },
   {
     "name": "🔞色猫资源1",
@@ -917,15 +909,15 @@
     "detail": "https://api.maozyapi.com",
     "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 521/6993"
+    "reason": "HTTP 521/6994"
   },
   {
-    "name": "🔞虾米资源",
-    "api": "https://zy.hls.one/api.php/provide/vod",
+    "name": "🔞成人07",
+    "api": "http://wmcj8.com/inc/sapi.php",
     "detail": "",
     "is_adult": true,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 200/27498"
   },
   {
     "name": "🔞无线资源网",
@@ -936,12 +928,44 @@
     "reason": "ConnectionError"
   },
   {
+    "name": "🔞淘片资源",
+    "api": "https://taopianapi.com/api.php/provide/vod",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "🔞泡芙资源",
+    "api": "http://zmcj88.com/api?ac=list",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "HTTP 200/482"
+  },
+  {
+    "name": "...",
+    "api": "https://.../api.php/provide/vod",
+    "detail": "https://...",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "InvalidURL"
+  },
+  {
     "name": "Public",
     "api": "https://vod.example.com/api.php/provide/vod",
     "detail": "https://vod.example.com",
     "is_adult": false,
     "status": "failed",
     "reason": "obvious-junk"
+  },
+  {
+    "name": "🔞虾米资源",
+    "api": "https://zy.hls.one/api.php/provide/vod",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
   },
   {
     "name": "🔞小美眉",
@@ -960,14 +984,6 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "api",
-    "api": "https://域名/api.php/provide/vod",
-    "detail": "https://域名",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
     "name": "发现源-old-proxy.com",
     "api": "https://old-proxy.com/?url=https://lovedan.net/api.php/provide/vod",
     "detail": "https://old-proxy.com",
@@ -976,20 +992,28 @@
     "reason": "obvious-junk"
   },
   {
-    "name": "🔞淘片资源",
-    "api": "https://taopianapi.com/api.php/provide/vod",
-    "detail": "",
+    "name": "api",
+    "api": "https://域名/api.php/provide/vod",
+    "detail": "https://域名",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🔅KK资源ᴴ",
+    "api": "https://kkzy.me/api.php/provide/vod",
+    "detail": "https://kkzy.me",
     "is_adult": true,
     "status": "failed",
     "reason": "SSLError"
   },
   {
-    "name": "🔞新浪资源",
-    "api": "http://cj.xinlangzy.com/api.php/provide/vod",
-    "detail": "https://cj.xinlangzy.com",
-    "is_adult": true,
+    "name": "发现源-corsapi.smone.workers.dev",
+    "api": "https://corsapi.smone.workers.dev/p/lovedan?url=https://lovedan.net/api.php/provide/vod",
+    "detail": "https://corsapi.smone.workers.dev",
+    "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/6"
+    "reason": "HTTP 403/5689"
   },
   {
     "name": "🔞红牛资源",
@@ -1008,36 +1032,12 @@
     "reason": "HTTP 200/31"
   },
   {
-    "name": "🔞黄瓜资源",
-    "api": "https://www.avre06.com/api.php/provide/vod",
-    "detail": "",
+    "name": "🔞新浪资源",
+    "api": "http://cj.xinlangzy.com/api.php/provide/vod",
+    "detail": "https://cj.xinlangzy.com",
     "is_adult": true,
     "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "杏吧资源",
-    "api": "https://xingba222.com/api.php/provide",
-    "detail": "https://sex8zy8.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "HTTP 200/0"
-  },
-  {
-    "name": "🔵39影视",
-    "api": "https://www.39kan.com/api.php/provide/vod",
-    "detail": "https://www.39kan.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 523/7176"
-  },
-  {
-    "name": "🔵39影视(json)",
-    "api": "https://www.39kan.com/api.php/provide/vod/at/json",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 523/7176"
+    "reason": "HTTP 200/6"
   },
   {
     "name": "悟空资源网采集接口",
@@ -1048,12 +1048,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "TV-茶杯狐",
-    "api": "http://caihy.zone.id/%E8%8C%B6%E6%9D%AF%E7%8B%90.php?filter=true",
+    "name": "🔞熊猫资源",
+    "api": "http://jcspcj8.com/api?ac=list",
     "detail": "",
-    "is_adult": false,
+    "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 200/32"
+    "reason": "HTTP 200/483"
   },
   {
     "name": "幸资源站采集接口",
@@ -1072,12 +1072,36 @@
     "reason": "SSLError"
   },
   {
-    "name": "🔅77韩剧ᴴ",
-    "api": "https://www.77hanju.com/api.php/provide/vod",
-    "detail": "https://www.77hanju.com",
+    "name": "🔞黄瓜资源",
+    "api": "https://www.avre06.com/api.php/provide/vod",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "TV-淘片资源",
+    "api": "https://taopianapi.com/cjapi/mc10/vod/json.html",
+    "detail": "https://www.taopianzy.com/help.html",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/4377"
+    "reason": "SSLError"
+  },
+  {
+    "name": "TV-淘片资源",
+    "api": "https://taopianapi.com/cjapi/mc10/vod",
+    "detail": "https://taopianapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "AV-小湿妹",
+    "api": "https://www.afasu.com/api/json.php",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "SSLError"
   },
   {
     "name": "AV-色嗨国",
@@ -1096,12 +1120,12 @@
     "reason": "InvalidURL"
   },
   {
-    "name": "发现源-xxx.com",
-    "api": "http://xxx.com/api.php/provide/vod",
-    "detail": "https://xxx.com",
+    "name": "TV-茶杯狐",
+    "api": "http://caihy.zone.id/%E8%8C%B6%E6%9D%AF%E7%8B%90.php?filter=true",
+    "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/19204"
+    "reason": "HTTP 200/32"
   },
   {
     "name": "♻️业余|天堂资源",
@@ -1128,28 +1152,20 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔞熊猫资源",
-    "api": "http://jcspcj8.com/api?ac=list",
-    "detail": "",
+    "name": "杏吧资源",
+    "api": "https://xingba222.com/api.php/provide",
+    "detail": "https://sex8zy8.com",
     "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 200/31518"
+    "reason": "HTTP 200/0"
   },
   {
-    "name": "AV-小湿妹",
-    "api": "https://www.afasu.com/api/json.php",
+    "name": "百万资源网采集接口",
+    "api": "https://api.baiwanapi.com/api.php/provide/vod",
     "detail": "",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "🐝土狗360",
-    "api": "http://360.tgzy.cc/api.php/provide/vod",
-    "detail": "https://360.tgzy.cc",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/4852"
+    "reason": "HTTP 200/27769"
   },
   {
     "name": "🐝段友影视",
@@ -1184,14 +1200,6 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🈚人人影视",
-    "api": "https://www.rrvipw.com/api.php/provide/vod",
-    "detail": "https://www.rrvipw.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
     "name": "🐝冠军资源",
     "api": "https://www.cmpzy.com/api.php/provide/vod",
     "detail": "https://www.cmpzy.com",
@@ -1200,33 +1208,17 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔞成人25",
-    "api": "http://99zy.pw/api.php/provide/vod",
-    "detail": "https://99zy.pw",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "HTTP 404/72963"
-  },
-  {
-    "name": "♻️业余┃FF9采集",
-    "api": "https://www.ff9.top/api.php/provide/vod",
-    "detail": "",
+    "name": "🐝土狗360",
+    "api": "http://360.tgzy.cc/api.php/provide/vod",
+    "detail": "https://360.tgzy.cc",
     "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "HTTP 200/5654"
   },
   {
-    "name": "🐝木子看剧",
-    "api": "https://mzkj.maccms.cf/api.php/provide/vod",
-    "detail": "https://mzkj.maccms.cf",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🐝外国影源",
-    "api": "http://api.nguonphim.tv/api.php/provide/vod",
-    "detail": "https://api.nguonphim.tv",
+    "name": "🈚人人影视",
+    "api": "https://www.rrvipw.com/api.php/provide/vod",
+    "detail": "https://www.rrvipw.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -1240,17 +1232,25 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "发现源-zy.xiaomaomi.cc",
-    "api": "https://zy.xiaomaomi.cc/api.php/provide/vod",
-    "detail": "https://zy.xiaomaomi.cc",
+    "name": "🐝忆 梦",
+    "api": "http://anltv.cn/api.php/provide/vod",
+    "detail": "https://anltv.cn",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 404/146"
+    "reason": "ConnectionError"
   },
   {
     "name": "🐝8090资源",
     "api": "http://zy.yilans.net:8090/api.php/provide/vod",
     "detail": "https://zy.yilans.net:8090",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🐝外国影源",
+    "api": "http://api.nguonphim.tv/api.php/provide/vod",
+    "detail": "https://api.nguonphim.tv",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -1264,20 +1264,20 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🐝酷点资源",
-    "api": "https://api.kuapi.cc/api.php/provide/vod",
-    "detail": "https://api.kuapi.cc",
+    "name": "🐝木子看剧",
+    "api": "https://mzkj.maccms.cf/api.php/provide/vod",
+    "detail": "https://mzkj.maccms.cf",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
   },
   {
-    "name": "🐝忆 梦",
-    "api": "http://anltv.cn/api.php/provide/vod",
-    "detail": "https://anltv.cn",
+    "name": "🐝番茄资源",
+    "api": "http://api.fqzy.cc/api.php/provide/vod",
+    "detail": "https://api.fqzy.cc",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 200/27665"
   },
   {
     "name": "🐝诺迅资源",
@@ -1312,12 +1312,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🐝快播云",
-    "api": "http://www.kuaibozy.com/api.php/provide/vod",
-    "detail": "https://www.kuaibozy.com",
+    "name": "🐝酷点资源",
+    "api": "https://api.kuapi.cc/api.php/provide/vod",
+    "detail": "https://api.kuapi.cc",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/44629"
+    "reason": "ConnectionError"
   },
   {
     "name": "🐝松鼠资源",
@@ -1328,12 +1328,52 @@
     "reason": "ConnectionError"
   },
   {
+    "name": "♻️业余┃FF9采集",
+    "api": "https://www.ff9.top/api.php/provide/vod",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "发现源-zy.xiaomaomi.cc",
+    "api": "https://zy.xiaomaomi.cc/api.php/provide/vod",
+    "detail": "https://zy.xiaomaomi.cc",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/146"
+  },
+  {
+    "name": "AV-黄瓜",
+    "api": "https://www.avre06.com/api.php/Prodao/vod",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
     "name": "🐝畅视影视",
     "api": "http://app.reboju.net/api.php/provide/vod",
     "detail": "https://app.reboju.net",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
+  },
+  {
+    "name": "🐝快播云",
+    "api": "http://www.kuaibozy.com/api.php/provide/vod",
+    "detail": "https://www.kuaibozy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/44629"
+  },
+  {
+    "name": "🐝飘花资源",
+    "api": "http://www.zzrhgg.com/api.php/provide/vod",
+    "detail": "https://www.zzrhgg.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/2023"
   },
   {
     "name": "🐝WaBc腾讯",
@@ -1352,10 +1392,26 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "AV-黄瓜",
-    "api": "https://www.avre06.com/api.php/Prodao/vod",
-    "detail": "",
-    "is_adult": true,
+    "name": "🐝Fox 采集",
+    "api": "https://api.foxzyapi.com/api.php/provide/vod",
+    "detail": "https://api.foxzyapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/31947"
+  },
+  {
+    "name": "🐝江北资源",
+    "api": "https://gfzycj.hnmj.vip/api.php/provide/vod",
+    "detail": "https://gfzycj.hnmj.vip",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "🐝神速资源",
+    "api": "https://api.sszyapi.com/api.php/provide/vod",
+    "detail": "https://api.sszyapi.com",
+    "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
   },
@@ -1368,36 +1424,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🐝神速资源",
-    "api": "https://api.sszyapi.com/api.php/provide/vod",
-    "detail": "https://api.sszyapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🐝江北资源",
-    "api": "https://gfzycj.hnmj.vip/api.php/provide/vod",
-    "detail": "https://gfzycj.hnmj.vip",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
     "name": "🐝酷猫影视",
     "api": "https://www.pgcms10.com/api.php/provide/vod",
     "detail": "https://www.pgcms10.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
-  },
-  {
-    "name": "🐝每天看看",
-    "api": "http://47.113.126.237:1234/api.php/provide/vod",
-    "detail": "https://47.113.126.237:1234",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/7367"
   },
   {
     "name": "🈚人人资源(优)",
@@ -1408,33 +1440,33 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔞成人07",
-    "api": "http://wmcj8.com/inc/sapi.php",
-    "detail": "",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "HTTP 200/27548"
-  },
-  {
-    "name": "TV-淘片资源",
-    "api": "https://taopianapi.com/cjapi/mc10/vod/json.html",
-    "detail": "https://www.taopianzy.com/help.html",
+    "name": "发现源-xxx.com",
+    "api": "http://xxx.com/api.php/provide/vod",
+    "detail": "https://xxx.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "HTTP 404/4364"
   },
   {
-    "name": "TV-淘片资源",
-    "api": "https://taopianapi.com/cjapi/mc10/vod",
-    "detail": "https://taopianapi.com",
+    "name": "思古官采(官)",
+    "api": "http://zy.sgyun.me/api.php/provide/vod",
+    "detail": "https://zy.sgyun.me",
     "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "ConnectionError"
   },
   {
     "name": "星一官采(官)",
     "api": "https://gcku.suboyun.vip/api.php/provide/vod",
     "detail": "https://gcku.suboyun.vip",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🐝一拳动漫",
+    "api": "http://47.97.68.224/api.php/provide/vod",
+    "detail": "https://47.97.68.224",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -1448,28 +1480,28 @@
     "reason": "HTTP 404/130"
   },
   {
-    "name": "🐝飘花资源",
-    "api": "http://www.zzrhgg.com/api.php/provide/vod",
-    "detail": "https://www.zzrhgg.com",
+    "name": "6U资源(官)",
+    "api": "http://www.6uzy.cc/inc/apijson_vod.php",
+    "detail": "https://www.6uzy.cc",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/2271"
+    "reason": "HTTP 200/499"
   },
   {
-    "name": "土狗官采(官)",
-    "api": "http://vip-02.tgzy.cc/api.php/provide/vod",
-    "detail": "https://vip-02.tgzy.cc",
+    "name": "🐝每天看看",
+    "api": "http://47.113.126.237:1234/api.php/provide/vod",
+    "detail": "https://47.113.126.237:1234",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/4856"
+    "reason": "HTTP 404/7367"
   },
   {
-    "name": "🐝一拳动漫",
-    "api": "http://47.97.68.224/api.php/provide/vod",
-    "detail": "https://47.97.68.224",
+    "name": "晓成云(官)",
+    "api": "http://cj.cygc.xyz/api.php/provide/vod",
+    "detail": "https://cj.cygc.xyz",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 403/93"
   },
   {
     "name": "奥特曼资源(官)",
@@ -1480,36 +1512,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "TOM资源(切)",
-    "api": "https://api.tomcaiji.com/api.php/provide/vod",
-    "detail": "https://api.tomcaiji.com",
+    "name": "🐝八戒官采",
+    "api": "https://www.bajiezy.xyz/api.php/provide/vod",
+    "detail": "https://www.bajiezy.xyz",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "思古官采(官)",
-    "api": "http://zy.sgyun.me/api.php/provide/vod",
-    "detail": "https://zy.sgyun.me",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🐝Fox 采集",
-    "api": "https://api.foxzyapi.com/api.php/provide/vod",
-    "detail": "https://api.foxzyapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/31535"
-  },
-  {
-    "name": "北斗星资源(切)",
-    "api": "https://m3u8.bdxzyapi.com/api.php/provide/vod",
-    "detail": "https://m3u8.bdxzyapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 200/1148"
   },
   {
     "name": "片库(官)",
@@ -1528,25 +1536,9 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "6U资源(官)",
-    "api": "http://www.6uzy.cc/inc/apijson_vod.php",
-    "detail": "https://www.6uzy.cc",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/499"
-  },
-  {
-    "name": "速更资源(切)",
-    "api": "https://sugengzy.cn/api.php/provide/vod",
-    "detail": "https://sugengzy.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "鱼乐资源(切)",
-    "api": "https://api.ylzy1.com/api.php/provide/vod",
-    "detail": "https://api.ylzy1.com",
+    "name": "TOM资源(切)",
+    "api": "https://api.tomcaiji.com/api.php/provide/vod",
+    "detail": "https://api.tomcaiji.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -1555,6 +1547,30 @@
     "name": "猫眼资源(切)",
     "api": "http://maoyanapi.com/api.php/provide/vod",
     "detail": "https://maoyanapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "土狗官采(官)",
+    "api": "http://vip-02.tgzy.cc/api.php/provide/vod",
+    "detail": "https://vip-02.tgzy.cc",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/5658"
+  },
+  {
+    "name": "北斗星资源(切)",
+    "api": "https://m3u8.bdxzyapi.com/api.php/provide/vod",
+    "detail": "https://m3u8.bdxzyapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "鱼乐资源(切)",
+    "api": "https://api.ylzy1.com/api.php/provide/vod",
+    "detail": "https://api.ylzy1.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -1576,9 +1592,25 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🐝77电影",
-    "api": "https://www.77diany.com/api.php/provide/vod",
-    "detail": "https://www.77diany.com",
+    "name": "飞速资源(切)",
+    "api": "https://www.feisuzy.com/api.php/provide/vod",
+    "detail": "https://www.feisuzy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/122"
+  },
+  {
+    "name": "无尽资源(切)",
+    "api": "https://wujinzy.com/api.php/provide/vod",
+    "detail": "https://wujinzy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/16"
+  },
+  {
+    "name": "🐝播放呀",
+    "api": "https://www.bofangya.com/api.php/provide/vod",
+    "detail": "https://www.bofangya.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -1592,25 +1624,17 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "无尽资源(切)",
-    "api": "https://wujinzy.com/api.php/provide/vod",
-    "detail": "https://wujinzy.com",
+    "name": "🐝77电影",
+    "api": "https://www.77diany.com/api.php/provide/vod",
+    "detail": "https://www.77diany.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 404/16"
+    "reason": "HTTP 200/125"
   },
   {
     "name": "奈菲迷(优)",
     "api": "https://app.netflixmi.com/ruifenglb_api.php/provide/vod",
     "detail": "https://app.netflixmi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "鸭奈飞(优)",
-    "api": "http://newtv.yanaifei.cn/api.php/provide/vod",
-    "detail": "https://newtv.yanaifei.cn",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -1632,12 +1656,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "XYUI(优)",
-    "api": "http://jx4.xyui.top:7001/api.php/provide/vod",
-    "detail": "https://jx4.xyui.top:7001",
+    "name": "🐝趣看采集",
+    "api": "https://qkmp4.cn/api.php/provide/vod",
+    "detail": "https://qkmp4.cn",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 200/1137"
   },
   {
     "name": "ASMR(优)",
@@ -1648,36 +1672,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🐝播放呀",
-    "api": "https://www.bofangya.com/api.php/provide/vod",
-    "detail": "https://www.bofangya.com",
+    "name": "鸭奈飞(优)",
+    "api": "http://newtv.yanaifei.cn/api.php/provide/vod",
+    "detail": "https://newtv.yanaifei.cn",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
-  },
-  {
-    "name": "🐝趣看采集",
-    "api": "https://qkmp4.cn/api.php/provide/vod",
-    "detail": "https://qkmp4.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/1225"
-  },
-  {
-    "name": "🐝北斗星",
-    "api": "https://api.bdxapi.com/api.php/provide/vod",
-    "detail": "https://api.bdxapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/9"
-  },
-  {
-    "name": "🐝八戒官采",
-    "api": "https://www.bajiezy.xyz/api.php/provide/vod",
-    "detail": "https://www.bajiezy.xyz",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/1148"
   },
   {
     "name": "饭后电影(优)",
@@ -1696,12 +1696,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "飞速资源(切)",
-    "api": "https://www.feisuzy.com/api.php/provide/vod",
-    "detail": "https://www.feisuzy.com",
+    "name": "🐝北斗星",
+    "api": "https://api.bdxapi.com/api.php/provide/vod",
+    "detail": "https://api.bdxapi.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 404/9"
   },
   {
     "name": "看看资源(优)",
@@ -1709,15 +1709,31 @@
     "detail": "https://zy.hikan.xyz",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/31396"
+    "reason": "HTTP 200/31734"
   },
   {
-    "name": "美剧星球(聚)",
-    "api": "https://www.meijuxq.tv/inc/apijson_vod.php",
-    "detail": "https://www.meijuxq.tv",
+    "name": "筋斗云(优)",
+    "api": "https://tv.jindcloud.com/api.php/provide/vod",
+    "detail": "https://tv.jindcloud.com",
     "is_adult": false,
     "status": "failed",
     "reason": "SSLError"
+  },
+  {
+    "name": "猪猪影院(聚)",
+    "api": "https://www.2zdyy.com/api.php/provide/vod",
+    "detail": "https://www.2zdyy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "XYUI(优)",
+    "api": "http://jx4.xyui.top:7001/api.php/provide/vod",
+    "detail": "https://jx4.xyui.top:7001",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
   },
   {
     "name": "初恋云影视(聚)",
@@ -1736,12 +1752,20 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "晓成云(官)",
-    "api": "http://cj.cygc.xyz/api.php/provide/vod",
-    "detail": "https://cj.cygc.xyz",
+    "name": "美剧星球(聚)",
+    "api": "https://www.meijuxq.tv/inc/apijson_vod.php",
+    "detail": "https://www.meijuxq.tv",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 403/93"
+    "reason": "SSLError"
+  },
+  {
+    "name": "天天影视(聚)",
+    "api": "http://tt2022.ga/api.php/provide/vod",
+    "detail": "https://tt2022.ga",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
   },
   {
     "name": "酷点影视(聚)",
@@ -1752,12 +1776,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "天天影视(聚)",
-    "api": "http://tt2022.ga/api.php/provide/vod",
-    "detail": "https://tt2022.ga",
+    "name": "乐活影视(优)",
+    "api": "https://lehootv.com/api.php/provide/vod",
+    "detail": "https://lehootv.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "SSLError"
   },
   {
     "name": "橘子影视(聚)",
@@ -1792,12 +1816,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "VV影视(聚)",
-    "api": "https://vvdy.org/api.php/provide/vod",
-    "detail": "https://vvdy.org",
+    "name": "天天看(优)",
+    "api": "https://www.ttky8.com/api.php/provide/vod",
+    "detail": "https://www.ttky8.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "api-text"
   },
   {
     "name": "迅播影院(聚)",
@@ -1816,65 +1840,17 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "猪猪影院(聚)",
-    "api": "https://www.2zdyy.com/api.php/provide/vod",
-    "detail": "https://www.2zdyy.com",
+    "name": "VV影视(聚)",
+    "api": "https://vvdy.org/api.php/provide/vod",
+    "detail": "https://vvdy.org",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 403/150"
+    "reason": "ConnectionError"
   },
   {
     "name": "嗨哆咪影视(聚)",
     "api": "http://hdmys1.com/api.php/provide/vod",
     "detail": "https://hdmys1.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "天天看(优)",
-    "api": "https://www.ttky8.com/api.php/provide/vod",
-    "detail": "https://www.ttky8.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/31468"
-  },
-  {
-    "name": "乐活影视(优)",
-    "api": "https://lehootv.com/api.php/provide/vod",
-    "detail": "https://lehootv.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "飞鱼影视(聚)",
-    "api": "https://app.feiyu5.com/api.php/provide/vod",
-    "detail": "https://app.feiyu5.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "千寻时光(聚)",
-    "api": "http://wy.dqyhg.cn/api.php/provide/vod",
-    "detail": "https://wy.dqyhg.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 403/4542"
-  },
-  {
-    "name": "TV-华为吧资源",
-    "api": "https://huawei8.live/api.php/provide/vod",
-    "detail": "https://huawei8.live",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
-    "name": "晓峰影视(聚)",
-    "api": "http://api.xxcr.tk/api.php/provide/vod",
-    "detail": "https://api.xxcr.tk",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -1888,12 +1864,36 @@
     "reason": "HTTP 403/146"
   },
   {
-    "name": "兔子窝(聚)",
-    "api": "http://cj.huimaojia.com:12345/api.php/provide/vod",
-    "detail": "https://cj.huimaojia.com:12345",
+    "name": "飞鱼影视(聚)",
+    "api": "https://app.feiyu5.com/api.php/provide/vod",
+    "detail": "https://app.feiyu5.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
+  },
+  {
+    "name": "晓峰影视(聚)",
+    "api": "http://api.xxcr.tk/api.php/provide/vod",
+    "detail": "https://api.xxcr.tk",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "AV-鲨鱼资源",
+    "api": "https://shayuapi.com/api.php/provide/vod",
+    "detail": "https://shayuapi.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ReadTimeout"
+  },
+  {
+    "name": "TV-华为吧资源",
+    "api": "https://huawei8.live/api.php/provide/vod",
+    "detail": "https://huawei8.live",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectTimeout"
   },
   {
     "name": "快看客栈(聚)",
@@ -1904,20 +1904,36 @@
     "reason": "api-text"
   },
   {
-    "name": "百万资源网采集接口",
-    "api": "https://api.baiwanapi.com/api.php/provide/vod",
+    "name": "MBO影视(聚)",
+    "api": "https://www.mbomovie.com/api.php/provide/vod",
+    "detail": "https://www.mbomovie.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "api-text"
+  },
+  {
+    "name": "兔子窝(聚)",
+    "api": "http://cj.huimaojia.com:12345/api.php/provide/vod",
+    "detail": "https://cj.huimaojia.com:12345",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🔵华为吧",
+    "api": "https://hw8.live/api.php/provide/vod",
     "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/27371"
+    "reason": "ConnectTimeout"
   },
   {
-    "name": "51看剧(优)",
-    "api": "http://51kanju.cn/api.php/provide/vod",
-    "detail": "https://51kanju.cn",
+    "name": "嘛哩嘛哩(聚)",
+    "api": "https://malimali3.com/api.php/provide/vod",
+    "detail": "https://malimali3.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/1651"
+    "reason": "SSLError"
   },
   {
     "name": "if101(海外推荐)",
@@ -1928,12 +1944,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "嘛哩嘛哩(聚)",
-    "api": "https://malimali3.com/api.php/provide/vod",
-    "detail": "https://malimali3.com",
+    "name": "🔵阿里源",
+    "api": "http://aliys.cn:90/api.php/provide/vod",
+    "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "ConnectionError"
   },
   {
     "name": "🎀酷伦理",
@@ -1952,14 +1968,6 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵华为吧",
-    "api": "https://hw8.live/api.php/provide/vod",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
     "name": "吟窝🈲",
     "api": "https://api.yinwoapi.com/api.php/provide/vod",
     "detail": "https://api.yinwoapi.com",
@@ -1976,42 +1984,10 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔵阿里源",
-    "api": "http://aliys.cn:90/api.php/provide/vod",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
     "name": "爱播🈲",
     "api": "https://cj.apiabzy.com/api.php/provide/vod",
     "detail": "https://cj.apiabzy.com",
     "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "丝袜🔞",
-    "api": "https://siwazyw.cc/api.php/provide/vod",
-    "detail": "https://siwazyw.cc",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "葡萄🔞",
-    "api": "https://caiji.putaozy.net/inc/api.php",
-    "detail": "https://caiji.putaozy.net",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "影库🔞",
-    "api": "https://api.ykapi.net/api.php/provide/vod",
-    "detail": "https://api.ykapi.net",
-    "is_adult": true,
     "status": "failed",
     "reason": "ConnectionError"
   },
@@ -2024,6 +2000,14 @@
     "reason": "HTTP 503/55"
   },
   {
+    "name": "🎀酷豆",
+    "api": "https://api.kdapi.info/api.php/provide/vod",
+    "detail": "https://api.kdapi.info",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/27653"
+  },
+  {
     "name": "花魁🔞",
     "api": "https://caiji.huakuiapi.com/inc/apijson_vod.php",
     "detail": "https://caiji.huakuiapi.com",
@@ -2032,9 +2016,33 @@
     "reason": "ConnectionError"
   },
   {
+    "name": "葡萄🔞",
+    "api": "https://caiji.putaozy.net/inc/api.php",
+    "detail": "https://caiji.putaozy.net",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
     "name": "浪潮🔞",
     "api": "http://langchaozy11.com/api.php/provide/vod",
     "detail": "https://langchaozy11.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "丝袜🔞",
+    "api": "https://siwazyw.cc/api.php/provide/vod",
+    "detail": "https://siwazyw.cc",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "影库🔞",
+    "api": "https://api.ykapi.net/api.php/provide/vod",
+    "detail": "https://api.ykapi.net",
     "is_adult": true,
     "status": "failed",
     "reason": "ConnectionError"
@@ -2064,17 +2072,137 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "MBO影视(聚)",
-    "api": "https://www.mbomovie.com/api.php/provide/vod",
-    "detail": "https://www.mbomovie.com",
+    "name": "TV-海洋资源",
+    "api": "http://www.seacms.org/api.php/provide/vod",
+    "detail": "https://www.seacms.org",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/31548"
+    "reason": "ReadTimeout"
+  },
+  {
+    "name": "TV-无水印资源",
+    "api": "https://api.wsyzy.net/api.php/provide/vod",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ReadTimeout"
+  },
+  {
+    "name": "🔅四二ᴴ",
+    "api": "https://42.la/api.php/provide/vod",
+    "detail": "https://42.la",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectTimeout"
+  },
+  {
+    "name": "发现源-api.putaozy.net",
+    "api": "https://api.putaozy.net/inc/apijson_vod.php",
+    "detail": "https://api.putaozy.net",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "发现源-caiji.naichaapi.com",
+    "api": "https://caiji.naichaapi.com/inc/apijson_vod.php",
+    "detail": "https://caiji.naichaapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "发现源-jializyzapi.com",
+    "api": "http://www.jializyzapi.com/api.php/provide/vod",
+    "detail": "https://www.jializyzapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
   },
   {
     "name": "AV-探探资源",
     "api": "https://apittzy.com/api.php/provide/vod",
     "detail": "https://apittzy.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectTimeout"
+  },
+  {
+    "name": "发现源-apihjzy.com",
+    "api": "https://apihjzy.com/api.php/provide/vod",
+    "detail": "https://apihjzy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "芒果🔞",
+    "api": "https://mgzyz1.com/api.php/provide/vod",
+    "detail": "https://mgzyz1.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "HTTP 200/27884"
+  },
+  {
+    "name": "4000🔞",
+    "api": "http://www.4000zy.com/api.php/provide/vod",
+    "detail": "https://www.4000zy.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "HTTP 200/2023"
+  },
+  {
+    "name": "发现源-m.7777688.com",
+    "api": "http://m.7777688.com/inc/apijson.php",
+    "detail": "https://m.7777688.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/43954"
+  },
+  {
+    "name": "发现源-zy.sh0o.cn",
+    "api": "https://zy.sh0o.cn/api.php/provide/vod",
+    "detail": "https://zy.sh0o.cn",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "发现源-4000zy.com",
+    "api": "http://4000zy.com/inc/api.php",
+    "detail": "https://4000zy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/2023"
+  },
+  {
+    "name": "🦁┃四九┃资源",
+    "api": "https://49zy1.com/api.php/provide/vod",
+    "detail": "https://49zy1.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/43"
+  },
+  {
+    "name": "⛱┃可可┃采集",
+    "api": "https://kekezy1.com/api.php/provide/vod",
+    "detail": "https://kekezy1.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "👒┃小胡┃资源┃",
+    "api": "http://c.小胡.icu/api.php/provide/vod",
+    "detail": "https://c.小胡.icu",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🔞探探资源（慢）",
+    "api": "https://apittzy.com/api.php/provide/vod/at/xml",
+    "detail": "",
     "is_adult": true,
     "status": "failed",
     "reason": "ConnectTimeout"
@@ -2088,132 +2216,12 @@
     "reason": "HTTP 200/6990"
   },
   {
-    "name": "发现源-caiji.naichaapi.com",
-    "api": "https://caiji.naichaapi.com/inc/apijson_vod.php",
-    "detail": "https://caiji.naichaapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "TV-海洋资源",
-    "api": "http://www.seacms.org/api.php/provide/vod",
-    "detail": "https://www.seacms.org",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ReadTimeout"
-  },
-  {
-    "name": "发现源-jializyzapi.com",
-    "api": "http://www.jializyzapi.com/api.php/provide/vod",
-    "detail": "https://www.jializyzapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "发现源-apihjzy.com",
-    "api": "https://apihjzy.com/api.php/provide/vod",
-    "detail": "https://apihjzy.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "发现源-api.putaozy.net",
-    "api": "https://api.putaozy.net/inc/apijson_vod.php",
-    "detail": "https://api.putaozy.net",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "发现源-zy.sh0o.cn",
-    "api": "https://zy.sh0o.cn/api.php/provide/vod",
-    "detail": "https://zy.sh0o.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "发现源-m.7777688.com",
-    "api": "http://m.7777688.com/inc/apijson.php",
-    "detail": "https://m.7777688.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/43954"
-  },
-  {
-    "name": "🔅四二ᴴ",
-    "api": "https://42.la/api.php/provide/vod",
-    "detail": "https://42.la",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
-    "name": "👒┃小胡┃资源┃",
-    "api": "http://c.小胡.icu/api.php/provide/vod",
-    "detail": "https://c.小胡.icu",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🎀酷豆",
-    "api": "https://api.kdapi.info/api.php/provide/vod",
-    "detail": "https://api.kdapi.info",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "🦁┃四九┃资源",
-    "api": "https://49zy1.com/api.php/provide/vod",
-    "detail": "https://49zy1.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "⛱┃可可┃采集",
-    "api": "https://kekezy1.com/api.php/provide/vod",
-    "detail": "https://kekezy1.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "4000🔞",
-    "api": "http://www.4000zy.com/api.php/provide/vod",
-    "detail": "https://www.4000zy.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "HTTP 200/2271"
-  },
-  {
     "name": "🌪️暴风影音",
     "api": "https://app.bfzyapi.com/api.php/provide/vod",
     "detail": "https://app.bfzyapi.com",
     "is_adult": false,
     "status": "failed",
     "reason": "HTTP 404/159"
-  },
-  {
-    "name": "haiwaikan海外看影视",
-    "api": "https://haiwaikan.com/api.php/provide/vod",
-    "detail": "https://haiwaikan.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "发现源-4000zy.com",
-    "api": "http://4000zy.com/inc/api.php",
-    "detail": "https://4000zy.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/2271"
   },
   {
     "name": "📺PPTV（官）",
@@ -2224,6 +2232,14 @@
     "reason": "ConnectionError"
   },
   {
+    "name": "LAN",
+    "api": "http://192.168.1.10/api.php/provide/vod",
+    "detail": "https://192.168.1.10",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectTimeout"
+  },
+  {
     "name": "🐶多多资源",
     "api": "https://ddzyz1.com/api.php/provide/vod",
     "detail": "https://ddzyz1.com",
@@ -2232,28 +2248,20 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "腾讯｜弹幕",
-    "api": "https://github.zhoujie218.top/https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/影视/JS/drpy2.min.js",
-    "detail": "",
-    "is_adult": false,
+    "name": "🔞成人22",
+    "api": "http://www.feifei67.com/api.php/provide/vod",
+    "detail": "https://www.feifei67.com",
+    "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 404/14"
+    "reason": "ConnectTimeout"
   },
   {
-    "name": "🐝共青春影院",
-    "api": "https://gqc.ink/api.php/provide/vod",
-    "detail": "https://gqc.ink",
+    "name": "haiwaikan海外看影视",
+    "api": "https://haiwaikan.com/api.php/provide/vod",
+    "detail": "https://haiwaikan.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 403/5515"
-  },
-  {
-    "name": "🥗天天影视(聚)",
-    "api": "http://tttv.cf/api.php/provide/vod",
-    "detail": "https://tttv.cf",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "SSLError"
   },
   {
     "name": "🟡快帆",
@@ -2272,12 +2280,12 @@
     "reason": "SSLError"
   },
   {
-    "name": "🔞探探资源（慢）",
-    "api": "https://apittzy.com/api.php/provide/vod/at/xml",
+    "name": "🔴恒星",
+    "api": "http://ys.540734621.xyz/api.php/provide/vod",
     "detail": "",
-    "is_adult": true,
+    "is_adult": false,
     "status": "failed",
-    "reason": "ConnectTimeout"
+    "reason": "ConnectionError"
   },
   {
     "name": "发现源-域名",
@@ -2296,12 +2304,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "LAN",
-    "api": "http://192.168.1.10/api.php/provide/vod",
-    "detail": "https://192.168.1.10",
+    "name": "51看剧(优)",
+    "api": "http://51kanju.cn/api.php/provide/vod",
+    "detail": "https://51kanju.cn",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectTimeout"
+    "reason": "HTTP 200/1651"
   },
   {
     "name": "发现源-source.example",
@@ -2312,177 +2320,17 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🔴恒星",
-    "api": "http://ys.540734621.xyz/api.php/provide/vod",
-    "detail": "",
+    "name": "发现源-v.ini0.com",
+    "api": "https://v.ini0.com/api.php/provide/vod",
+    "detail": "https://v.ini0.com",
     "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "爱奇艺｜视频",
-    "api": "https://raw.githubusercontent.com/gzdiky-ui/xx/main/lib/drpy2.min.js",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "non-empty"
-  },
-  {
-    "name": "293影视(优)",
-    "api": "http://293x.yhzy.xyz/mv/api.php/provide/vod",
-    "detail": "https://293x.yhzy.xyz",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 403/93"
-  },
-  {
-    "name": "🔞成人22",
-    "api": "http://www.feifei67.com/api.php/provide/vod",
-    "detail": "",
-    "is_adult": true,
     "status": "failed",
     "reason": "ConnectTimeout"
   },
   {
-    "name": "腾云",
-    "api": "https://api.tyun77.cn/api.php/provide",
-    "detail": "https://api.tyun77.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 403/2785"
-  },
-  {
-    "name": "土狗Autue(优)",
-    "api": "http://vip-08.tgzy.cc/api.php/provide/vod",
-    "detail": "https://vip-08.tgzy.cc",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/4856"
-  },
-  {
-    "name": "唐人资源(优)",
-    "api": "https://tangrenzyz.com/api.php/provide/vod",
-    "detail": "https://tangrenzyz.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "极速官采(官)",
-    "api": "http://gc.zhuijuba.vip/api.php/provide/vod",
-    "detail": "https://gc.zhuijuba.vip",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/43"
-  },
-  {
-    "name": "抹茶猪(龙腾)(优)",
-    "api": "https://www.mczdyw.com/api.php/provide/vod",
-    "detail": "https://www.mczdyw.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "开放云(X5)(优)",
-    "api": "https://z.iopenyun.com:99/apiopy.php/provide/vod",
-    "detail": "https://z.iopenyun.com:99",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "皮荼熊TV(优)",
-    "api": "https://www.psinu.com/api.php/provide/vod",
-    "detail": "https://www.psinu.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "荔枝影视(优)",
-    "api": "http://www.zjys.vip/api.php/provide/vod",
-    "detail": "https://www.zjys.vip",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "淘剧鸭(优)",
-    "api": "https://so2.cc/api.php/provide/vod",
-    "detail": "https://so2.cc",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/6"
-  },
-  {
-    "name": "追剧吧(优)",
-    "api": "http://zhuiju8.vip/api.php/provide/vod",
-    "detail": "https://zhuiju8.vip",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "易看视频(优)",
-    "api": "https://video.yikan.app/api.php/provide/vod",
-    "detail": "https://video.yikan.app",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "极速蓝光(优)",
-    "api": "http://hs.zhuijuba.vip/api.php/provide/vod",
-    "detail": "https://hs.zhuijuba.vip",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/43"
-  },
-  {
-    "name": "奇乐(优剧)资源(优)",
-    "api": "https://zy.ujuba.com/api.php/provide/vod",
-    "detail": "https://zy.ujuba.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "饭团影视(优)",
-    "api": "http://television.wkfile.com/api.php/provide/vod",
-    "detail": "https://television.wkfile.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "哆咪动漫(优)",
-    "api": "http://www.dmdm2020.com/api.php/provide/vod",
-    "detail": "https://www.dmdm2020.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "api-text"
-  },
-  {
-    "name": "小蜻蜓APP(优)",
-    "api": "http://3ketv.com/api.php/provide/vod",
-    "detail": "https://3ketv.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "旧梦影视(优)",
-    "api": "https://mac.qd234.cn/api.php/provide/vod",
-    "detail": "https://mac.qd234.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "MuX官采",
-    "api": "https://video.muxvip.com/api.php/provide/vod",
-    "detail": "https://video.muxvip.com",
+    "name": "🥗天天影视(聚)",
+    "api": "http://tttv.cf/api.php/provide/vod",
+    "detail": "https://tttv.cf",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -2496,20 +2344,36 @@
     "reason": "ConnectTimeout"
   },
   {
-    "name": "发现源-v.ini0.com",
-    "api": "https://v.ini0.com/api.php/provide/vod",
-    "detail": "https://v.ini0.com",
+    "name": "极速官采(官)",
+    "api": "http://gc.zhuijuba.vip/api.php/provide/vod",
+    "detail": "https://gc.zhuijuba.vip",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectTimeout"
+    "reason": "HTTP 404/43"
   },
   {
-    "name": "雪人蓝光",
-    "api": "https://zy.qd234.cn/api.php/provide/vod",
-    "detail": "https://zy.qd234.cn",
+    "name": "293影视(优)",
+    "api": "http://293x.yhzy.xyz/mv/api.php/provide/vod",
+    "detail": "https://293x.yhzy.xyz",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 403/93"
+  },
+  {
+    "name": "🐝共青春影院",
+    "api": "https://gqc.ink/api.php/provide/vod",
+    "detail": "https://gqc.ink",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 403/5515"
+  },
+  {
+    "name": "淘剧鸭(优)",
+    "api": "https://so2.cc/api.php/provide/vod",
+    "detail": "https://so2.cc",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/6"
   },
   {
     "name": "🔞AV-鲨鱼资源",
@@ -2520,6 +2384,150 @@
     "reason": "ReadTimeout"
   },
   {
+    "name": "抹茶猪(龙腾)(优)",
+    "api": "https://www.mczdyw.com/api.php/provide/vod",
+    "detail": "https://www.mczdyw.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "极速蓝光(优)",
+    "api": "http://hs.zhuijuba.vip/api.php/provide/vod",
+    "detail": "https://hs.zhuijuba.vip",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/43"
+  },
+  {
+    "name": "追剧吧(优)",
+    "api": "http://zhuiju8.vip/api.php/provide/vod",
+    "detail": "https://zhuiju8.vip",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "开放云(X5)(优)",
+    "api": "https://z.iopenyun.com:99/apiopy.php/provide/vod",
+    "detail": "https://z.iopenyun.com:99",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "爱奇艺｜视频",
+    "api": "https://raw.githubusercontent.com/gzdiky-ui/xx/main/lib/drpy2.min.js",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "non-empty"
+  },
+  {
+    "name": "皮荼熊TV(优)",
+    "api": "https://www.psinu.com/api.php/provide/vod",
+    "detail": "https://www.psinu.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "唐人资源(优)",
+    "api": "https://tangrenzyz.com/api.php/provide/vod",
+    "detail": "https://tangrenzyz.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "荔枝影视(优)",
+    "api": "http://www.zjys.vip/api.php/provide/vod",
+    "detail": "https://www.zjys.vip",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "饭团影视(优)",
+    "api": "http://television.wkfile.com/api.php/provide/vod",
+    "detail": "https://television.wkfile.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "易看视频(优)",
+    "api": "https://video.yikan.app/api.php/provide/vod",
+    "detail": "https://video.yikan.app",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "奇乐(优剧)资源(优)",
+    "api": "https://zy.ujuba.com/api.php/provide/vod",
+    "detail": "https://zy.ujuba.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "土狗Autue(优)",
+    "api": "http://vip-08.tgzy.cc/api.php/provide/vod",
+    "detail": "https://vip-08.tgzy.cc",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/5658"
+  },
+  {
+    "name": "小蜻蜓APP(优)",
+    "api": "http://3ketv.com/api.php/provide/vod",
+    "detail": "https://3ketv.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "腾讯｜弹幕",
+    "api": "https://github.zhoujie218.top/https://raw.githubusercontent.com/PizazzGY/TVBox_warehouse/main/影视/JS/drpy2.min.js",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/14"
+  },
+  {
+    "name": "MuX官采",
+    "api": "https://video.muxvip.com/api.php/provide/vod",
+    "detail": "https://video.muxvip.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "哆咪动漫(优)",
+    "api": "http://www.dmdm2020.com/api.php/provide/vod",
+    "detail": "https://www.dmdm2020.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "api-text"
+  },
+  {
+    "name": "BL视频(优)",
+    "api": "https://bljiex.com/api.php/provide/vod",
+    "detail": "https://bljiex.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "雪人蓝光",
+    "api": "https://zy.qd234.cn/api.php/provide/vod",
+    "detail": "https://zy.qd234.cn",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
     "name": "灯塔蓝光",
     "api": "http://svip.hwh.ink/api.php/provide/vod",
     "detail": "https://svip.hwh.ink",
@@ -2528,20 +2536,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "星一蓝光(优)",
-    "api": "http://lgku.suboyun.cn/api.php/provide/vod",
-    "detail": "https://lgku.suboyun.cn",
+    "name": "OmoFun动漫(优)",
+    "api": "https://omofun.tv/api.php/provide/vod",
+    "detail": "https://omofun.tv",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "人人迷蓝光",
-    "api": "https://koko.renrenmi.cc/api.php/provide/vod",
-    "detail": "https://koko.renrenmi.cc",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
+    "reason": "api-text"
   },
   {
     "name": "LIBVIO",
@@ -2552,25 +2552,25 @@
     "reason": "HTTP 403/5522"
   },
   {
+    "name": "6U资源(官)",
+    "api": "http://zy.ataoju.com/inc/apijson_vod.php",
+    "detail": "https://zy.ataoju.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "星一蓝光(优)",
+    "api": "http://lgku.suboyun.cn/api.php/provide/vod",
+    "detail": "https://lgku.suboyun.cn",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
     "name": "蓝猫影视",
     "api": "http://lanmao.lanmaoymw.cn/api.php/provide/vod",
     "detail": "https://lanmao.lanmaoymw.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "椰子资源",
-    "api": "https://zy.gbxy.net.cn/api.php/provide/vod",
-    "detail": "https://zy.gbxy.net.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "2A资源",
-    "api": "http://zy.zcocc.com/api.php/provide/vod",
-    "detail": "https://zy.zcocc.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -2584,12 +2584,52 @@
     "reason": "ConnectTimeout"
   },
   {
-    "name": "OmoFun动漫(优)",
-    "api": "https://omofun.tv/api.php/provide/vod",
-    "detail": "https://omofun.tv",
+    "name": "人人迷蓝光",
+    "api": "https://koko.renrenmi.cc/api.php/provide/vod",
+    "detail": "https://koko.renrenmi.cc",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/31435"
+    "reason": "SSLError"
+  },
+  {
+    "name": "旧梦影视(优)",
+    "api": "https://mac.qd234.cn/api.php/provide/vod",
+    "detail": "https://mac.qd234.cn",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "2A资源",
+    "api": "http://zy.zcocc.com/api.php/provide/vod",
+    "detail": "https://zy.zcocc.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "电影牛",
+    "api": "https://www.dianyingn.cc/api.php/provide/vod",
+    "detail": "https://www.dianyingn.cc",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "椰子资源",
+    "api": "https://zy.gbxy.net.cn/api.php/provide/vod",
+    "detail": "https://zy.gbxy.net.cn",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🐇野兔影视",
+    "api": "http://xn--yetu07f.xn--yetu07f.icu:66/api.php/provide/vod",
+    "detail": "https://xn--yetu07f.xn--yetu07f.icu:66",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
   },
   {
     "name": "欧乐影院(VPN)",
@@ -2600,9 +2640,25 @@
     "reason": "HTTP 404/18"
   },
   {
-    "name": "电影牛",
-    "api": "https://www.dianyingn.cc/api.php/provide/vod",
-    "detail": "https://www.dianyingn.cc",
+    "name": "陈家影视",
+    "api": "https://www.cjt521.com/api.php/provide/vod",
+    "detail": "https://www.cjt521.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/27887"
+  },
+  {
+    "name": "一点影视(优)",
+    "api": "https://m3u8.movurl.xyz/api.php/provide/vod",
+    "detail": "https://m3u8.movurl.xyz",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/1137"
+  },
+  {
+    "name": "念念剧场",
+    "api": "https://997.yuanmajs.cn/api.php/provide/vod",
+    "detail": "https://997.yuanmajs.cn",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -2616,44 +2672,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🐇野兔影视",
-    "api": "http://xn--yetu07f.xn--yetu07f.icu:66/api.php/provide/vod",
-    "detail": "https://xn--yetu07f.xn--yetu07f.icu:66",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "念念剧场",
-    "api": "https://997.yuanmajs.cn/api.php/provide/vod",
-    "detail": "https://997.yuanmajs.cn",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
     "name": "🌐全看网",
     "api": "https://www.quankanw.cc/api.php/provide/vod",
     "detail": "https://www.quankanw.cc",
     "is_adult": false,
     "status": "failed",
     "reason": "SSLError"
-  },
-  {
-    "name": "陈家影视",
-    "api": "https://www.cjt521.com/api.php/provide/vod",
-    "detail": "https://www.cjt521.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/27675"
-  },
-  {
-    "name": "速",
-    "api": "http://www.ggmmzy.com:9999/inc/xml",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
   },
   {
     "name": "乐多资源(切)",
@@ -2664,17 +2688,17 @@
     "reason": "ConnectTimeout"
   },
   {
-    "name": "🈷️明地官采",
-    "api": "http://cj.md214.cn/api.php/provide/vod",
-    "detail": "https://cj.md214.cn",
+    "name": "*玖玖",
+    "api": "http://99zywcj.com/inc/sapi.php?ac=videolist",
+    "detail": "",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
   },
   {
-    "name": "*玖玖",
-    "api": "http://99zywcj.com/inc/sapi.php?ac=videolist",
-    "detail": "",
+    "name": "🈷️明地官采",
+    "api": "http://cj.md214.cn/api.php/provide/vod",
+    "detail": "https://cj.md214.cn",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -2688,20 +2712,20 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🚴🏿‍♂️赛维影视",
-    "api": "https://lsys.dsmynas.com:3000//api.php/provide/vod",
-    "detail": "https://lsys.dsmynas.com:3000",
+    "name": "速",
+    "api": "http://www.ggmmzy.com:9999/inc/xml",
+    "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 502/11939"
+    "reason": "ConnectionError"
   },
   {
-    "name": "鸭奈飞1(优)",
-    "api": "http://106.13.199.87:4433/api.php/provide/vod",
-    "detail": "https://106.13.199.87:4433",
+    "name": "腾云",
+    "api": "https://api.tyun77.cn/api.php/provide",
+    "detail": "https://api.tyun77.cn",
     "is_adult": false,
     "status": "failed",
-    "reason": "ConnectTimeout"
+    "reason": "HTTP 403/2785"
   },
   {
     "name": "AIvin",
@@ -2712,6 +2736,14 @@
     "reason": "HTTP 502/154"
   },
   {
+    "name": "*蛋蛋视频",
+    "api": "https://156.249.29.8/inc/apijson_vod.php",
+    "detail": "https://156.249.29.8",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
     "name": "酷伦理(切)",
     "api": "https://api.kudian70.com/api.php/provide/vod/at/json",
     "detail": "",
@@ -2720,20 +2752,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "旋风云(优)",
-    "api": "http://appimg.ssxmall.cn/api.php/provide/vod",
-    "detail": "https://appimg.ssxmall.cn",
+    "name": "速更资源(切)",
+    "api": "https://sugengzy.cn/api.php/provide/vod",
+    "detail": "https://sugengzy.cn",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectTimeout"
-  },
-  {
-    "name": "*蛋蛋视频",
-    "api": "https://156.249.29.8/inc/apijson_vod.php",
-    "detail": "https://156.249.29.8",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
   },
   {
     "name": "*金莲资源",
@@ -2744,36 +2768,28 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "*富二代（仅支持搜索）",
-    "api": "http://f2dcj6.com/sapi/?ac=videolist",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/146"
-  },
-  {
-    "name": "网民电影(聚)",
-    "api": "https://www.prinevillesda.org/api.php/provide/vod",
-    "detail": "https://www.prinevillesda.org",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "首涂官采(官)",
-    "api": "http://zy.ishoutu.com/api.php/provide/vod",
-    "detail": "https://zy.ishoutu.com",
+    "name": "鸭奈飞1(优)",
+    "api": "http://106.13.199.87:4433/api.php/provide/vod",
+    "detail": "https://106.13.199.87:4433",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectTimeout"
   },
   {
-    "name": "我要啪啪(切)",
-    "api": "http://www.caiji21.com/home/cjapi/klkl/mc10/vod/xml",
+    "name": "*环亚",
+    "api": "http://wmcj8.com/inc/sapi.php?ac=videolist",
     "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "HTTP 200/27929"
+  },
+  {
+    "name": "酷豆2(切)",
+    "api": "https://api.kdapi.info/api.php/provide/vod/at/json",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/27815"
   },
   {
     "name": "*影库资源",
@@ -2792,20 +2808,20 @@
     "reason": "ConnectionError"
   },
   {
+    "name": "*富二代（仅支持搜索）",
+    "api": "http://f2dcj6.com/sapi/?ac=videolist",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/146"
+  },
+  {
     "name": "*大MM",
     "api": "https://www.dmmapi.com/home/cjapi/asd2c7/mc/vod/xml",
     "detail": "",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
-  },
-  {
-    "name": "夜夜撸资源(切)",
-    "api": "https://www.caiji23.com/home/cjapi/kls6/mc10/vod/xml",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "SSLError"
   },
   {
     "name": "(18+)523资源",
@@ -2816,20 +2832,28 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🐝番茄资源",
-    "api": "http://api.fqzy.cc/api.php/provide/vod",
-    "detail": "https://api.fqzy.cc",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/27455"
-  },
-  {
     "name": "小湿妹资源(已修复)",
     "api": "https://www.afasu.com/api/xml.php",
     "detail": "",
     "is_adult": false,
     "status": "failed",
     "reason": "SSLError"
+  },
+  {
+    "name": "夜夜撸资源(切)",
+    "api": "https://www.caiji23.com/home/cjapi/kls6/mc10/vod/xml",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "(18+)JAV名优",
+    "api": "http://mygzycj.com/api.php?ac=list",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "api-text"
   },
   {
     "name": "*秀se",
@@ -2840,16 +2864,144 @@
     "reason": "ConnectionError"
   },
   {
+    "name": "旋风云(优)",
+    "api": "http://appimg.ssxmall.cn/api.php/provide/vod",
+    "detail": "https://appimg.ssxmall.cn",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectTimeout"
+  },
+  {
+    "name": "我要啪啪(切)",
+    "api": "http://www.caiji21.com/home/cjapi/klkl/mc10/vod/xml",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "荐片[js]",
+    "api": "https://www.100km.top/lib/drpy2.min.js",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "看365",
+    "api": "https://www.kan365.xyz/api.php/provide/vod",
+    "detail": "https://www.kan365.xyz",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/1148"
+  },
+  {
     "name": "*Sm",
     "api": "https://api.maozyapi.com/inc/api.php",
     "detail": "",
     "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 521/6993"
+    "reason": "HTTP 521/6994"
   },
   {
-    "name": "荐片[js]",
-    "api": "https://www.100km.top/lib/drpy2.min.js",
+    "name": "高清AV无码",
+    "api": "http://xoxozy.com/api.php/provide/vod",
+    "detail": "https://xoxozy.com",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "伊人资源",
+    "api": "https://api.yirenziyuan.com/api.php/provide/vod",
+    "detail": "https://api.yirenziyuan.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "秀色资源",
+    "api": "https://api.xiuseapi.com/api.php/provide/vod",
+    "detail": "https://api.xiuseapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "老鸨资源",
+    "api": "https://apilbzy.com/api.php/provide/vod",
+    "detail": "https://apilbzy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "开云资源",
+    "api": "https://kaiyunzy4.com/inc/apijson_vod.php",
+    "detail": "https://kaiyunzy4.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "草榴资源",
+    "api": "https://www.caoliuzy.com/api.php/provide/vod",
+    "detail": "https://www.caoliuzy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "好片资源",
+    "api": "https://haopianapi.com/api.php/provide/vod",
+    "detail": "https://haopianapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "花色资源",
+    "api": "https://api.huasezy.xyz/api.php/provide/vod",
+    "detail": "https://api.huasezy.xyz",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🚴🏿‍♂️赛维影视",
+    "api": "https://lsys.dsmynas.com:3000//api.php/provide/vod",
+    "detail": "https://lsys.dsmynas.com:3000",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 502/11939"
+  },
+  {
+    "name": "橘猫资源",
+    "api": "https://to.to-long.com/api.php/provide/vod",
+    "detail": "https://to.to-long.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🍀影库",
+    "api": "https://api.ykapi.net/api.php/provide/vod/at/xml",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "👙亚洲成人在线",
+    "api": "https://www.caiji01.com/home/cjapi/cfd2/mc10/vod/xml",
+    "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "👙草榴视频",
+    "api": "https://www.caiji02.com/home/cjapi/cfas/mc10/vod/xml",
     "detail": "",
     "is_adult": false,
     "status": "failed",
@@ -2864,100 +3016,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "草榴资源",
-    "api": "https://www.caoliuzy.com/api.php/provide/vod",
-    "detail": "https://www.caoliuzy.com",
+    "name": "(18+)SS资源",
+    "api": "http://secj8.com/inc/sapi.php?ac=videolist",
+    "detail": "",
     "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "秀色资源",
-    "api": "https://api.xiuseapi.com/api.php/provide/vod",
-    "detail": "https://api.xiuseapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "TVB云播",
-    "api": "http://www.tvyb02.com/api.php/provide/vod",
-    "detail": "https://www.tvyb02.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/935"
-  },
-  {
-    "name": "伊人资源",
-    "api": "https://api.yirenziyuan.com/api.php/provide/vod",
-    "detail": "https://api.yirenziyuan.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "高清AV无码",
-    "api": "http://xoxozy.com/api.php/provide/vod",
-    "detail": "https://xoxozy.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "HTTP 403/93"
-  },
-  {
-    "name": "速影(聚)",
-    "api": "https://速影128.xyz/inc/apijson.php",
-    "detail": "https://速影128.xyz",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
-    "name": "发现源-aays.shaozeyk.top",
-    "api": "https://aays.shaozeyk.top/api.php/provide/vod",
-    "detail": "https://aays.shaozeyk.top",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "开云资源",
-    "api": "https://kaiyunzy4.com/inc/apijson_vod.php",
-    "detail": "https://kaiyunzy4.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "好片资源",
-    "api": "https://haopianapi.com/api.php/provide/vod",
-    "detail": "https://haopianapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "老鸨资源",
-    "api": "https://apilbzy.com/api.php/provide/vod",
-    "detail": "https://apilbzy.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "橘猫资源",
-    "api": "https://to.to-long.com/api.php/provide/vod",
-    "detail": "https://to.to-long.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "花色资源",
-    "api": "https://api.huasezy.xyz/api.php/provide/vod",
-    "detail": "https://api.huasezy.xyz",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "HTTP 200/27891"
   },
   {
     "name": "📚儿童启蒙",
@@ -2968,48 +3032,24 @@
     "reason": "non-empty"
   },
   {
-    "name": "🍀影库",
-    "api": "https://api.ykapi.net/api.php/provide/vod/at/xml",
+    "name": "👙一本道资源",
+    "api": "https://www.caiji03.com/home/cjapi/cfg8/mc10/vod/xml",
     "detail": "",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
   },
   {
-    "name": "爱看",
-    "api": "http://tvcms.ikan6.vip/api.php/provide/vod",
-    "detail": "https://tvcms.ikan6.vip",
+    "name": "首涂官采(官)",
+    "api": "http://zy.ishoutu.com/api.php/provide/vod",
+    "detail": "https://zy.ishoutu.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/1646"
+    "reason": "ConnectTimeout"
   },
   {
-    "name": "👙亚洲成人在线",
-    "api": "https://www.caiji01.com/home/cjapi/cfd2/mc10/vod/xml",
-    "detail": "",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "看365",
-    "api": "https://www.kan365.xyz/api.php/provide/vod",
-    "detail": "https://www.kan365.xyz",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/1232"
-  },
-  {
-    "name": "*环亚",
-    "api": "http://wmcj8.com/inc/sapi.php?ac=videolist",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/27659"
-  },
-  {
-    "name": "👙草榴视频",
-    "api": "https://www.caiji02.com/home/cjapi/cfas/mc10/vod/xml",
+    "name": "👙久久热在线",
+    "api": "https://www.caiji06.com/home/cjapi/cfbb/mc10/vod/xml",
     "detail": "",
     "is_adult": false,
     "status": "failed",
@@ -3024,16 +3064,16 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "👙一本道资源",
-    "api": "https://www.caiji03.com/home/cjapi/cfg8/mc10/vod/xml",
+    "name": "👙青青草视频",
+    "api": "https://www.caiji05.com/home/cjapi/cfda/mc10/vod/xml",
     "detail": "",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
   },
   {
-    "name": "👙青青草视频",
-    "api": "https://www.caiji05.com/home/cjapi/cfda/mc10/vod/xml",
+    "name": "👙快播盒子资源",
+    "api": "https://www.caiji09.com/home/cjapi/cfp0/mc10/vod/xml",
     "detail": "",
     "is_adult": false,
     "status": "failed",
@@ -3056,8 +3096,8 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "👙久久热在线",
-    "api": "https://www.caiji06.com/home/cjapi/cfbb/mc10/vod/xml",
+    "name": "🥇花魁",
+    "api": "https://caiji.huakuiapi.com/inc/api.php",
     "detail": "",
     "is_adult": false,
     "status": "failed",
@@ -3072,52 +3112,12 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "一点影视(优)",
-    "api": "https://m3u8.movurl.xyz/api.php/provide/vod",
-    "detail": "https://m3u8.movurl.xyz",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/1232"
-  },
-  {
-    "name": "👙快播盒子资源",
-    "api": "https://www.caiji09.com/home/cjapi/cfp0/mc10/vod/xml",
+    "name": "👙AV集中淫",
+    "api": "https://www.caiji22.com/home/cjapi/klp0/mc10/vod/xml",
     "detail": "",
-    "is_adult": false,
+    "is_adult": true,
     "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "发现源-101.34.7.151:600",
-    "api": "http://101.34.7.151:600/api.php/provide/vod",
-    "detail": "https://101.34.7.151:600",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
-    "name": "随缘电影(聚)",
-    "api": "https://baobei666.com/inc/apijson_vod.php",
-    "detail": "https://baobei666.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🥇大MM",
-    "api": "https://www.dmmapi.com/home/cjapi/asd2c7/mc10/vod/xml",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "🥇花魁",
-    "api": "https://caiji.huakuiapi.com/inc/api.php",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
+    "reason": "SSLError"
   },
   {
     "name": "🥇奶茶",
@@ -3136,9 +3136,25 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🥈皇冠",
-    "api": "https://hghhh.com/api.php/provide/vod",
+    "name": "👙鲍鱼AV",
+    "api": "http://caiji26.com/home/cjapi/p0g8/mc10/vod/xml",
     "detail": "",
+    "is_adult": true,
+    "status": "failed",
+    "reason": "SSLError"
+  },
+  {
+    "name": "🥇大MM",
+    "api": "https://www.dmmapi.com/home/cjapi/asd2c7/mc10/vod/xml",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "发现源-aays.shaozeyk.top",
+    "api": "https://aays.shaozeyk.top/api.php/provide/vod",
+    "detail": "https://aays.shaozeyk.top",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -3160,50 +3176,18 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "👙AV集中淫",
-    "api": "https://www.caiji22.com/home/cjapi/klp0/mc10/vod/xml",
+    "name": "🥈99资源",
+    "api": "http://99zy.pw/api.php/provide/vod/at/json",
     "detail": "",
-    "is_adult": true,
+    "is_adult": false,
     "status": "failed",
-    "reason": "SSLError"
+    "reason": "ConnectionError"
   },
   {
     "name": "发现源-xzcjz.com",
     "api": "https://xzcjz.com/api.php/provide/vod",
     "detail": "https://xzcjz.com",
     "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "发现源-api.ukuapi88.com",
-    "api": "https://api.ukuapi88.com/api.php/provide",
-    "detail": "https://api.ukuapi88.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/0"
-  },
-  {
-    "name": "👙鲍鱼AV",
-    "api": "http://caiji26.com/home/cjapi/p0g8/mc10/vod/xml",
-    "detail": "",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "SSLError"
-  },
-  {
-    "name": "🎬如意资源",
-    "api": "https://jjpz.hafrey.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod",
-    "detail": "https://www.ryzyw.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "发现源-api.zuiseapi.com",
-    "api": "https://api.zuiseapi.com/api.php/provide/vod",
-    "detail": "https://api.zuiseapi.com",
-    "is_adult": true,
     "status": "failed",
     "reason": "ConnectionError"
   },
@@ -3216,10 +3200,26 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "🎬U酷资源",
-    "api": "https://jjpz.hafrey.dpdns.org/?url=https://api.ukuapi.com/api.php/provide/vod",
-    "detail": "https://api.ukuapi.com",
+    "name": "发现源-api.ukuapi88.com",
+    "api": "https://api.ukuapi88.com/api.php/provide",
+    "detail": "https://api.ukuapi88.com",
     "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/0"
+  },
+  {
+    "name": "🥇010爱",
+    "api": "http://www.010aizy.com/API/macs.php",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 404/277"
+  },
+  {
+    "name": "发现源-api.zuiseapi.com",
+    "api": "https://api.zuiseapi.com/api.php/provide/vod",
+    "detail": "https://api.zuiseapi.com",
+    "is_adult": true,
     "status": "failed",
     "reason": "ConnectionError"
   },
@@ -3227,6 +3227,14 @@
     "name": "🎬魔爪资源",
     "api": "https://jjpz.hafrey.dpdns.org/?url=https://mozhuazy.com/api.php/provide/vod",
     "detail": "https://mozhuazy.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🎬如意资源",
+    "api": "https://jjpz.hafrey.dpdns.org/?url=https://cj.rycjapi.com/api.php/provide/vod",
+    "detail": "https://www.ryzyw.com",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectionError"
@@ -3240,12 +3248,28 @@
     "reason": "ConnectionError"
   },
   {
+    "name": "🎬U酷资源",
+    "api": "https://jjpz.hafrey.dpdns.org/?url=https://api.ukuapi.com/api.php/provide/vod",
+    "detail": "https://api.ukuapi.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
     "name": "🔞丝袜资源",
     "api": "https://siwazyw.tv/api.php/provide/vod/at/json",
     "detail": "https://siwazyw.tv",
     "is_adult": true,
     "status": "failed",
     "reason": "ConnectionError"
+  },
+  {
+    "name": "🥇芒果",
+    "api": "https://mgzyz1.com/api.php/provide/vod/at/xml",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/27813"
   },
   {
     "name": "TV-金鹰资源",
@@ -3256,20 +3280,76 @@
     "reason": "HTTP 403/5656"
   },
   {
+    "name": "TVB云播",
+    "api": "http://www.tvyb02.com/api.php/provide/vod",
+    "detail": "https://www.tvyb02.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/1307"
+  },
+  {
     "name": "黄色资源",
     "api": "https://hszy.vip/api.php/provide/vod",
     "detail": "https://hszy.vip",
     "is_adult": true,
     "status": "failed",
-    "reason": "HTTP 200/4915"
+    "reason": "HTTP 200/4863"
   },
   {
-    "name": "🥇芒果",
-    "api": "https://mgzyz1.com/api.php/provide/vod/at/xml",
-    "detail": "",
+    "name": "速影(聚)",
+    "api": "https://速影128.xyz/inc/apijson.php",
+    "detail": "https://速影128.xyz",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/27555"
+    "reason": "ConnectTimeout"
+  },
+  {
+    "name": "随缘电影(聚)",
+    "api": "https://baobei666.com/inc/apijson_vod.php",
+    "detail": "https://baobei666.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "🔅77韩剧ᴴ",
+    "api": "https://www.77hanju.com/api.php/provide/vod",
+    "detail": "https://www.77hanju.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "千寻时光(聚)",
+    "api": "http://wy.dqyhg.cn/api.php/provide/vod",
+    "detail": "https://wy.dqyhg.cn",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectionError"
+  },
+  {
+    "name": "发现源-101.34.7.151:600",
+    "api": "http://101.34.7.151:600/api.php/provide/vod",
+    "detail": "https://101.34.7.151:600",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectTimeout"
+  },
+  {
+    "name": "爱看",
+    "api": "http://tvcms.ikan6.vip/api.php/provide/vod",
+    "detail": "https://tvcms.ikan6.vip",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "HTTP 200/1646"
+  },
+  {
+    "name": "永久资源",
+    "api": "https://api.yongjiuzy.cc/provide/vod",
+    "detail": "https://api.yongjiuzy.cc",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectTimeout"
   },
   {
     "name": "发现源-192.168.0.16:7963",
@@ -3278,14 +3358,6 @@
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectTimeout"
-  },
-  {
-    "name": "🥈99资源",
-    "api": "http://99zy.pw/api.php/provide/vod/at/json",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 404/72966"
   },
   {
     "name": "🔴快云",
@@ -3304,33 +3376,17 @@
     "reason": "ConnectionError"
   },
   {
-    "name": "BL视频(优)",
-    "api": "https://bljiex.com/api.php/provide/vod",
-    "detail": "https://bljiex.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
-    "name": "永久资源",
-    "api": "https://api.yongjiuzy.cc/provide/vod",
-    "detail": "https://api.yongjiuzy.cc",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
-    "name": "6U资源(官)",
-    "api": "http://zy.ataoju.com/inc/apijson_vod.php",
-    "detail": "https://zy.ataoju.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ReadTimeout"
-  },
-  {
     "name": "大米蓝光",
     "api": "https://www.dmzyu.com/api.php/provide/vod",
     "detail": "https://www.dmzyu.com",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectTimeout"
+  },
+  {
+    "name": "阿远采集(官)",
+    "api": "https://www.cjzy.xyz:8888/api.php/provide/vod",
+    "detail": "https://www.cjzy.xyz:8888",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectTimeout"
@@ -3344,52 +3400,12 @@
     "reason": "ReadTimeout"
   },
   {
-    "name": "阿远采集(官)",
-    "api": "https://www.cjzy.xyz:8888/api.php/provide/vod",
-    "detail": "https://www.cjzy.xyz:8888",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
-    "name": "(18+)JAV名优",
-    "api": "http://mygzycj.com/api.php?ac=list",
-    "detail": "",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectTimeout"
-  },
-  {
     "name": "小城影视(聚)",
     "api": "http://cygc.xyz:84/api.php/provide/vod",
     "detail": "https://cygc.xyz:84",
     "is_adult": false,
     "status": "failed",
     "reason": "ConnectTimeout"
-  },
-  {
-    "name": "芒果🔞",
-    "api": "https://mgzyz1.com/api.php/provide/vod",
-    "detail": "https://mgzyz1.com",
-    "is_adult": true,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
-    "name": "筋斗云(优)",
-    "api": "https://tv.jindcloud.com/api.php/provide/vod",
-    "detail": "https://tv.jindcloud.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "HTTP 200/27509"
-  },
-  {
-    "name": "哇可可影视(聚)",
-    "api": "https://www.zwcoco.com/api.php/provide/vod",
-    "detail": "https://www.zwcoco.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
   },
   {
     "name": "🥈探探",
@@ -3400,14 +3416,6 @@
     "reason": "ConnectTimeout"
   },
   {
-    "name": "发现源-api.suboapi.com",
-    "api": "https://api.suboapi.com/api.php/provide/vod",
-    "detail": "https://api.suboapi.com",
-    "is_adult": false,
-    "status": "failed",
-    "reason": "ConnectionError"
-  },
-  {
     "name": "👉春盈┃优酷",
     "api": "http://playersll.gaoxin155.com.cn/api.php/provide/vod",
     "detail": "https://playersll.gaoxin155.com.cn",
@@ -3416,28 +3424,28 @@
     "reason": "ConnectTimeout"
   },
   {
-    "name": "(18+)SS资源",
-    "api": "http://secj8.com/inc/sapi.php?ac=videolist",
-    "detail": "",
+    "name": "网民电影(聚)",
+    "api": "https://www.prinevillesda.org/api.php/provide/vod",
+    "detail": "https://www.prinevillesda.org",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/27549"
+    "reason": "SSLError"
   },
   {
-    "name": "酷豆2(切)",
-    "api": "https://api.kdapi.info/api.php/provide/vod/at/json",
-    "detail": "",
+    "name": "哇可可影视(聚)",
+    "api": "https://www.zwcoco.com/api.php/provide/vod",
+    "detail": "https://www.zwcoco.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 200/27289"
+    "reason": "ConnectionError"
   },
   {
-    "name": "🥇010爱",
-    "api": "http://www.010aizy.com/API/macs.php",
-    "detail": "",
+    "name": "发现源-api.suboapi.com",
+    "api": "https://api.suboapi.com/api.php/provide/vod",
+    "detail": "https://api.suboapi.com",
     "is_adult": false,
     "status": "failed",
-    "reason": "HTTP 404/277"
+    "reason": "ConnectionError"
   },
   {
     "name": "*乐鱼",
@@ -3458,6 +3466,14 @@
   {
     "name": "*狼友资源",
     "api": "https://www.langyouzy.com/api.php/provide/vod",
+    "detail": "",
+    "is_adult": false,
+    "status": "failed",
+    "reason": "ConnectTimeout"
+  },
+  {
+    "name": "🥈皇冠",
+    "api": "https://hghhh.com/api.php/provide/vod",
     "detail": "",
     "is_adult": false,
     "status": "failed",

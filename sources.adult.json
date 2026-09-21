@@ -135,6 +135,14 @@
       "status": "available",
       "m3u8_tested": true
     },
+    "apiyutu_com": {
+      "name": "AV-玉兔资源",
+      "api": "https://apiyutu.com/api.php/provide/vod",
+      "detail": "https://apiyutu.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
+    },
     "fqzy_me": {
       "name": "AV-番茄资源",
       "api": "https://fqzy.me//api.php/provide/vod",
@@ -158,19 +166,20 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "xxibaozyw_com": {
-      "name": "AV-细胞采集",
-      "api": "https://www.xxibaozyw.com/api.php/provide/vod",
-      "detail": "https://www.xxibaozyw.com",
-      "is_adult": true,
-      "status": "available"
-    },
     "msnii_com": {
       "name": "AV-美少女资源",
       "api": "https://www.msnii.com/api/json.php",
       "detail": "https://www.msnii.com",
       "is_adult": true,
       "status": "available"
+    },
+    "apilsbzy1_com": {
+      "name": "AV-老色逼资源",
+      "api": "https://apilsbzy1.com/api.php/provide/vod",
+      "detail": "https://apilsbzy1.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
     },
     "caiji_semaozy_net": {
       "name": "AV-色猫资源",
@@ -193,14 +202,6 @@
       "detail": "https://www.gdlsp.com",
       "is_adult": true,
       "status": "available"
-    },
-    "shayuapi_com": {
-      "name": "AV-鲨鱼资源",
-      "api": "https://shayuapi.com/api.php/provide/vod",
-      "detail": "https://shayuapi.com",
-      "is_adult": true,
-      "status": "available",
-      "m3u8_tested": true
     },
     "pgxdy_com": {
       "name": "AV-黄AV资源",
@@ -264,6 +265,14 @@
       "name": "发现源-ckzy1.com",
       "api": "https://www.ckzy1.com/api.php/provide/vod",
       "detail": "https://www.ckzy1.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
+    },
+    "yutuzy10_com": {
+      "name": "发现源-yutuzy10.com",
+      "api": "https://yutuzy10.com/api.php/provide/vod",
+      "detail": "https://yutuzy10.com",
       "is_adult": true,
       "status": "available",
       "m3u8_tested": true
@@ -440,13 +449,6 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "xiangjiaozyw_com": {
-      "name": "🔞香蕉资源",
-      "api": "https://www.xiangjiaozyw.com/api.php/provide/vod",
-      "detail": "https://www.xiangjiaozyw.com",
-      "is_adult": true,
-      "status": "available"
-    },
     "hsckzy_xyz": {
       "name": "🔞黄色仓库",
       "api": "https://hsckzy.xyz/api.php/provide/vod",
@@ -471,9 +473,9 @@
       "m3u8_tested": true
     }
   },
-  "update_date": "2026-09-14T07:29:39.593263",
+  "update_date": "2026-09-21T07:33:49.644336",
   "total_sources": 62,
-  "total_available": 156,
+  "total_available": 154,
   "total_maybe": 0,
   "total_included": 62,
   "total_adult": 62,
