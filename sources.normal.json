@@ -16,13 +16,6 @@
       "is_adult": false,
       "status": "available"
     },
-    "ckzy_me": {
-      "name": "CK资源",
-      "api": "https://ckzy.me/api.php/provide/vod/?ac=list",
-      "detail": "https://www.ckzy1.com",
-      "is_adult": false,
-      "status": "available"
-    },
     "ikunzyapi_com": {
       "name": "IK",
       "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8",
@@ -163,18 +156,18 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "api_wujinapi_com": {
-      "name": "TV-无尽资源",
-      "api": "https://api.wujinapi.com/api.php/provide/vod",
-      "detail": "https://wujinzy.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
     "api_wujinapi_net": {
       "name": "TV-无尽资源",
       "api": "https://api.wujinapi.net/api.php/provide/vod",
       "detail": "https://api.wujinapi.net",
+      "is_adult": false,
+      "status": "available",
+      "m3u8_tested": true
+    },
+    "api_wujinapi_com": {
+      "name": "TV-无尽资源",
+      "api": "https://api.wujinapi.com/api.php/provide/vod",
+      "detail": "https://wujinzy.com",
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
@@ -186,6 +179,13 @@
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
+    },
+    "api_wsyzy_net": {
+      "name": "TV-无水印资源",
+      "api": "https://api.wsyzy.net/api.php/provide/vod",
+      "detail": "",
+      "is_adult": false,
+      "status": "available"
     },
     "bfzyapi_com": {
       "name": "TV-暴风资源",
@@ -232,6 +232,14 @@
       "detail": "https://api.yparse.com",
       "is_adult": false,
       "status": "available"
+    },
+    "iqiyizyapi_com_2": {
+      "name": "TV-爱奇艺资源",
+      "api": "https://iqiyizyapi.com/api.php/provide/vod",
+      "detail": "https://iqiyizyapi.com",
+      "is_adult": false,
+      "status": "available",
+      "m3u8_tested": true
     },
     "api_niuniuzy_me": {
       "name": "TV-牛牛点播",
@@ -388,13 +396,6 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "api_ukuapi88_com_2": {
-      "name": "U酷资源",
-      "api": "https://api.ukuapi88.com/api.php/provide/art/?ac=list",
-      "detail": "",
-      "is_adult": false,
-      "status": "available"
-    },
     "s_19q_cc": {
       "name": "✈️关注TG频道@flymaf",
       "api": "https://19q.cc/api.php/provide/vod",
@@ -433,14 +434,6 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "dy_7772888_xyz": {
-      "name": "⭐爬虫",
-      "api": "https://dy.7772888.xyz/api.php/tvbox",
-      "detail": "",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
     "dyttzyw_com": {
       "name": "⭐电影天堂",
       "api": "http://dyttzyw.com/api.php/provide/vod",
@@ -455,6 +448,13 @@
       "is_adult": false,
       "status": "available"
     },
+    "s_154_219_117_232": {
+      "name": "发现源-154.219.117.232:9981",
+      "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod",
+      "detail": "https://154.219.117.232:9981",
+      "is_adult": false,
+      "status": "available"
+    },
     "api_maoyanapi_top": {
       "name": "发现源-api.maoyanapi.top",
       "api": "https://api.maoyanapi.top/api.php/provide/vod",
@@ -463,6 +463,13 @@
       "status": "available",
       "m3u8_tested": true
     },
+    "ffzy5_tv": {
+      "name": "发现源-ffzy5.tv",
+      "api": "https://ffzy5.tv/api.php/provide/vod",
+      "detail": "https://ffzy5.tv",
+      "is_adult": false,
+      "status": "available"
+    },
     "yonghu_ffzyapi8_com": {
       "name": "发现源-yonghu.ffzyapi8.com",
       "api": "https://yonghu.ffzyapi8.com/api.php/provide/vod",
@@ -470,32 +477,10 @@
       "is_adult": false,
       "status": "available"
     },
-    "tyyszyapi_com_2": {
-      "name": "天涯影视",
-      "api": "https://tyyszyapi.com/api.php/provide/vod/?ac=list",
-      "detail": "",
-      "is_adult": false,
-      "status": "available"
-    },
-    "s_154_219_117_232": {
-      "name": "建安资源站",
-      "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod",
-      "detail": "http://154.219.117.232:9981",
-      "is_adult": false,
-      "status": "available"
-    },
     "maoyanzy_com": {
       "name": "猫眼资源",
       "api": "https://maoyanzy.com/api.php/provide/vod",
       "detail": "https://maoyanzy.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
-    "api_maoyanapi_top_2": {
-      "name": "猫眼资源",
-      "api": "https://api.maoyanapi.top/api.php/provide/vod/at/json",
-      "detail": "https://api.maoyanapi.top",
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
@@ -522,33 +507,10 @@
       "is_adult": false,
       "status": "available"
     },
-    "ffzy5_tv": {
-      "name": "非凡资源站",
-      "api": "https://ffzy5.tv/api.php/provide/vod",
-      "detail": "https://ffzy5.tv",
-      "is_adult": false,
-      "status": "available"
-    },
-    "yonghu_ffzyapi8_com_2": {
-      "name": "🎬无广1线 (非凡)",
-      "api": "https://yonghu.ffzyapi8.com/api.php/provide/vod/from/ffm3u8/at/json",
-      "detail": "https://yonghu.ffzyapi8.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
     "huyaapi_com_2": {
       "name": "🎬虎牙资源",
       "api": "https://www.huyaapi.com/api.php/provide/vod/at/json",
       "detail": "https://www.huyaapi.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
-    "zitv_cc": {
-      "name": "🐝橘猫资源",
-      "api": "http://www.zitv.cc/api.php/provide/vod",
-      "detail": "https://www.zitv.cc",
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
@@ -697,11 +659,11 @@
       "status": "available"
     }
   },
-  "update_date": "2026-09-21T07:33:49.644336",
-  "total_sources": 92,
-  "total_available": 154,
+  "update_date": "2026-09-28T08:07:51.614575",
+  "total_sources": 87,
+  "total_available": 151,
   "total_maybe": 0,
-  "total_included": 92,
+  "total_included": 87,
   "total_adult": 0,
-  "total_normal": 92
+  "total_normal": 87
 }
