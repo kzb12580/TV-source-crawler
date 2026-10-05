@@ -211,14 +211,6 @@
       "is_adult": true,
       "status": "available"
     },
-    "shayuapi_com": {
-      "name": "AV-鲨鱼资源",
-      "api": "https://shayuapi.com/api.php/provide/vod",
-      "detail": "https://shayuapi.com",
-      "is_adult": true,
-      "status": "available",
-      "m3u8_tested": true
-    },
     "pgxdy_com": {
       "name": "AV-黄AV资源",
       "api": "https://www.pgxdy.com/api/json.php",
@@ -351,10 +343,10 @@
       "is_adult": true,
       "status": "available"
     },
-    "shayuzy1_com": {
-      "name": "🔞AV-鲨鱼资源",
-      "api": "http://shayuzy1.com/api.php/provide/vod/at/json",
-      "detail": "https://shayuzy1.com",
+    "api_souavzyw_net": {
+      "name": "🔞souavZY",
+      "api": "https://api.souavzyw.net/api.php/provide/vod",
+      "detail": "https://api.souavzyw.net",
       "is_adult": true,
       "status": "available",
       "m3u8_tested": true
@@ -377,13 +369,6 @@
       "name": "🔞大地资源",
       "api": "https://dadiapi.com/apple_m3u8.php",
       "detail": "",
-      "is_adult": true,
-      "status": "available"
-    },
-    "dadiapi_com_5": {
-      "name": "🔞大地资源",
-      "api": "https://dadiapi.com/feifei2",
-      "detail": "https://dadizy11.com",
       "is_adult": true,
       "status": "available"
     },
@@ -489,11 +474,11 @@
       "m3u8_tested": true
     }
   },
-  "update_date": "2026-09-28T08:07:51.614575",
-  "total_sources": 64,
-  "total_available": 151,
+  "update_date": "2026-10-05T08:08:46.993625",
+  "total_sources": 62,
+  "total_available": 145,
   "total_maybe": 0,
-  "total_included": 64,
-  "total_adult": 64,
+  "total_included": 62,
+  "total_adult": 62,
   "total_normal": 0
 }
