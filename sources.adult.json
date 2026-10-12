@@ -58,13 +58,6 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "aosikazy_com": {
-      "name": "AV-奥斯卡资源",
-      "api": "https://aosikazy.com/api.php/provide/vod",
-      "detail": "https://aosikazy.com",
-      "is_adult": true,
-      "status": "available"
-    },
     "naixxzy_com": {
       "name": "AV-奶香香",
       "api": "https://Naixxzy.com/api.php/provide/vod",
@@ -211,6 +204,14 @@
       "is_adult": true,
       "status": "available"
     },
+    "shayuapi_com": {
+      "name": "AV-鲨鱼资源",
+      "api": "https://shayuapi.com/api.php/provide/vod",
+      "detail": "https://shayuapi.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
+    },
     "pgxdy_com": {
       "name": "AV-黄AV资源",
       "api": "https://www.pgxdy.com/api/json.php",
@@ -343,6 +344,14 @@
       "is_adult": true,
       "status": "available"
     },
+    "shayuzy1_com": {
+      "name": "🔞AV-鲨鱼资源",
+      "api": "http://shayuzy1.com/api.php/provide/vod/at/json",
+      "detail": "https://shayuzy1.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
+    },
     "api_souavzyw_net": {
       "name": "🔞souavZY",
       "api": "https://api.souavzyw.net/api.php/provide/vod",
@@ -474,11 +483,11 @@
       "m3u8_tested": true
     }
   },
-  "update_date": "2026-10-05T08:08:46.993625",
-  "total_sources": 62,
-  "total_available": 145,
+  "update_date": "2026-10-12T08:28:19.105711",
+  "total_sources": 63,
+  "total_available": 157,
   "total_maybe": 0,
-  "total_included": 62,
-  "total_adult": 62,
+  "total_included": 63,
+  "total_adult": 63,
   "total_normal": 0
 }
