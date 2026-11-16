@@ -31,7 +31,8 @@
       "api": "https://api.souavzy.vip/api.php/provide/vod",
       "detail": "https://api.souavzy.vip",
       "is_adult": true,
-      "status": "available"
+      "status": "available",
+      "m3u8_tested": true
     },
     "lbapi9_com": {
       "name": "AV-乐播资源",
@@ -79,14 +80,6 @@
       "is_adult": true,
       "status": "available"
     },
-    "apiyutu_com": {
-      "name": "AV-玉兔资源",
-      "api": "https://apiyutu.com/api.php/provide/vod",
-      "detail": "https://apiyutu.com",
-      "is_adult": true,
-      "status": "available",
-      "m3u8_tested": true
-    },
     "fhapi9_com": {
       "name": "AV-番号资源",
       "api": "https://fhapi9.com/api.php/provide/vod",
@@ -116,14 +109,6 @@
       "detail": "https://www.msnii.com",
       "is_adult": true,
       "status": "available"
-    },
-    "apilsbzy1_com": {
-      "name": "AV-老色逼资源",
-      "api": "https://apilsbzy1.com/api.php/provide/vod",
-      "detail": "https://apilsbzy1.com",
-      "is_adult": true,
-      "status": "available",
-      "m3u8_tested": true
     },
     "apilj_com": {
       "name": "AV-辣椒资源",
@@ -299,13 +284,6 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "hsckzy_xyz": {
-      "name": "🔞黄色仓库",
-      "api": "https://hsckzy.xyz/api.php/provide/vod",
-      "detail": "https://hsckzy.xyz",
-      "is_adult": true,
-      "status": "available"
-    },
     "heiliaozyapi_com": {
       "name": "🔞黑料资源",
       "api": "https://www.heiliaozyapi.com/api.php/provide/vod",
@@ -315,11 +293,11 @@
       "m3u8_tested": true
     }
   },
-  "update_date": "2026-11-09T08:57:25.414601",
-  "total_sources": 41,
-  "total_available": 101,
+  "update_date": "2026-11-16T08:54:35.234257",
+  "total_sources": 38,
+  "total_available": 98,
   "total_maybe": 0,
-  "total_included": 41,
-  "total_adult": 41,
+  "total_included": 38,
+  "total_adult": 38,
   "total_normal": 0
 }
