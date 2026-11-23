@@ -50,14 +50,6 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "api_wujinapi_cc": {
-      "name": "TV-wujinapi无尽",
-      "api": "https://api.wujinapi.cc/api.php/provide/vod",
-      "detail": "",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
     "cj_yayazy_net": {
       "name": "TV-丫丫点播",
       "api": "https://cj.yayazy.net/api.php/provide/vod",
@@ -111,26 +103,10 @@
       "status": "available",
       "m3u8_tested": true
     },
-    "api_wujinapi_com": {
-      "name": "TV-无尽资源",
-      "api": "https://api.wujinapi.com/api.php/provide/vod",
-      "detail": "https://wujinzy.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
     "api_wujinapi_me": {
       "name": "TV-无尽资源",
       "api": "https://api.wujinapi.me/api.php/provide/vod",
       "detail": "https://wujinzy.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
-    "api_wujinapi_net": {
-      "name": "TV-无尽资源",
-      "api": "https://api.wujinapi.net/api.php/provide/vod",
-      "detail": "",
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
@@ -155,6 +131,14 @@
       "name": "TV-最大资源",
       "api": "https://api.zuidapi.com/api.php/provide/vod",
       "detail": "https://api.zuidapi.com",
+      "is_adult": false,
+      "status": "available",
+      "m3u8_tested": true
+    },
+    "m3u8_apiyhzy_com": {
+      "name": "TV-樱花资源",
+      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod",
+      "detail": "https://yhzy.cc",
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
@@ -286,13 +270,6 @@
       "is_adult": false,
       "status": "available"
     },
-    "cj_ffzyapi_com": {
-      "name": "TV-非凡资源",
-      "api": "https://cj.ffzyapi.com/api.php/provide/vod",
-      "detail": "https://cj.ffzyapi.com",
-      "is_adult": false,
-      "status": "available"
-    },
     "caiji_moduapi_cc": {
       "name": "TV-魔都动漫",
       "api": "https://caiji.moduapi.cc/api.php/provide/vod",
@@ -316,12 +293,13 @@
       "is_adult": false,
       "status": "available"
     },
-    "hsckzy_vip": {
-      "name": "发现源-hsckzy.vip",
-      "api": "https://hsckzy.vip/api.php/provide/vod",
-      "detail": "https://hsckzy.vip",
+    "yutuzy10_com": {
+      "name": "发现源-yutuzy10.com",
+      "api": "https://yutuzy10.com/api.php/provide/vod",
+      "detail": "https://yutuzy10.com",
       "is_adult": false,
-      "status": "available"
+      "status": "available",
+      "m3u8_tested": true
     },
     "jyzyapi_com_2": {
       "name": "金鹰资源采集网",
@@ -350,14 +328,6 @@
       "name": "🎬360 资源",
       "api": "https://360zyzz.com/api.php/provide/vod",
       "detail": "https://360zy.com",
-      "is_adult": false,
-      "status": "available",
-      "m3u8_tested": true
-    },
-    "api_yzzy_api_com_2": {
-      "name": "🎬优质资源",
-      "api": "https://api.yzzy-api.com/inc/apijson.php",
-      "detail": "https://1080zyk4.com",
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
@@ -391,13 +361,6 @@
       "is_adult": false,
       "status": "available",
       "m3u8_tested": true
-    },
-    "api_1080zyku_com_3": {
-      "name": "🔵优质资源库",
-      "api": "https://api.1080zyku.com/inc/api.php/provide/vod",
-      "detail": "",
-      "is_adult": false,
-      "status": "available"
     },
     "api_guangsuapi_com_2": {
       "name": "🔵光速资源(gsm3u8)",
@@ -507,6 +470,13 @@
       "is_adult": true,
       "status": "available"
     },
+    "naixxzy_com": {
+      "name": "AV-奶香香",
+      "api": "https://Naixxzy.com/api.php/provide/vod",
+      "detail": "https://Naixxzy.com",
+      "is_adult": true,
+      "status": "available"
+    },
     "api_xiaojizy_live": {
       "name": "AV-小鸡资源",
       "api": "https://api.xiaojizy.live/provide/vod",
@@ -538,6 +508,14 @@
       "is_adult": true,
       "status": "available"
     },
+    "apiyutu_com": {
+      "name": "AV-玉兔资源",
+      "api": "https://apiyutu.com/api.php/provide/vod",
+      "detail": "https://apiyutu.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
+    },
     "fhapi9_com": {
       "name": "AV-番号资源",
       "api": "https://fhapi9.com/api.php/provide/vod",
@@ -568,6 +546,14 @@
       "is_adult": true,
       "status": "available"
     },
+    "apilsbzy1_com": {
+      "name": "AV-老色逼资源",
+      "api": "https://apilsbzy1.com/api.php/provide/vod",
+      "detail": "https://apilsbzy1.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
+    },
     "apilj_com": {
       "name": "AV-辣椒资源",
       "api": "https://apilj.com/api.php/provide/vod",
@@ -595,13 +581,6 @@
       "name": "AV-黄AV资源",
       "api": "https://www.pgxdy.com/api/json.php",
       "detail": "https://www.pgxdy.com",
-      "is_adult": true,
-      "status": "available"
-    },
-    "hsckzy888_com": {
-      "name": "AV-黄色资源",
-      "api": "https://hsckzy888.com/api.php/provide/vod",
-      "detail": "https://hsckzy888.com",
       "is_adult": true,
       "status": "available"
     },
@@ -751,14 +730,14 @@
       "m3u8_tested": true
     }
   },
-  "update_date": "2026-11-16T08:54:35.234257",
-  "total_sources": 98,
-  "total_available": 98,
+  "update_date": "2026-11-23T10:09:16.848591",
+  "total_sources": 95,
+  "total_available": 95,
   "total_maybe": 0,
-  "total_included": 98,
-  "total_adult": 38,
-  "total_normal": 60,
+  "total_included": 95,
+  "total_adult": 40,
+  "total_normal": 55,
   "m3u8_total": 62,
-  "m3u8_normal": 38,
-  "m3u8_adult": 24
+  "m3u8_normal": 36,
+  "m3u8_adult": 26
 }

@@ -49,6 +49,13 @@
       "is_adult": true,
       "status": "available"
     },
+    "naixxzy_com": {
+      "name": "AV-奶香香",
+      "api": "https://Naixxzy.com/api.php/provide/vod",
+      "detail": "https://Naixxzy.com",
+      "is_adult": true,
+      "status": "available"
+    },
     "api_xiaojizy_live": {
       "name": "AV-小鸡资源",
       "api": "https://api.xiaojizy.live/provide/vod",
@@ -80,6 +87,14 @@
       "is_adult": true,
       "status": "available"
     },
+    "apiyutu_com": {
+      "name": "AV-玉兔资源",
+      "api": "https://apiyutu.com/api.php/provide/vod",
+      "detail": "https://apiyutu.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
+    },
     "fhapi9_com": {
       "name": "AV-番号资源",
       "api": "https://fhapi9.com/api.php/provide/vod",
@@ -110,6 +125,14 @@
       "is_adult": true,
       "status": "available"
     },
+    "apilsbzy1_com": {
+      "name": "AV-老色逼资源",
+      "api": "https://apilsbzy1.com/api.php/provide/vod",
+      "detail": "https://apilsbzy1.com",
+      "is_adult": true,
+      "status": "available",
+      "m3u8_tested": true
+    },
     "apilj_com": {
       "name": "AV-辣椒资源",
       "api": "https://apilj.com/api.php/provide/vod",
@@ -137,13 +160,6 @@
       "name": "AV-黄AV资源",
       "api": "https://www.pgxdy.com/api/json.php",
       "detail": "https://www.pgxdy.com",
-      "is_adult": true,
-      "status": "available"
-    },
-    "hsckzy888_com": {
-      "name": "AV-黄色资源",
-      "api": "https://hsckzy888.com/api.php/provide/vod",
-      "detail": "https://hsckzy888.com",
       "is_adult": true,
       "status": "available"
     },
@@ -293,11 +309,11 @@
       "m3u8_tested": true
     }
   },
-  "update_date": "2026-11-16T08:54:35.234257",
-  "total_sources": 38,
-  "total_available": 98,
+  "update_date": "2026-11-23T10:09:16.848591",
+  "total_sources": 40,
+  "total_available": 95,
   "total_maybe": 0,
-  "total_included": 38,
-  "total_adult": 38,
+  "total_included": 40,
+  "total_adult": 40,
   "total_normal": 0
 }
